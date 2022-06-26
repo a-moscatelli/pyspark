@@ -22,5 +22,17 @@ pvdf = spark.read.csv('pv_sample_input_1.csv',inferSchema=True,header=True)
 pvdf.printSchema()
 pvdf = pvdf.where(pvdf['report ccy'] == 'CCY')
 pvdf.groupBy('pnl report').pivot('v').sum('PV').toPandas()
-  
+
+
+scope_pddf = pd.DataFrame({
+                    'product': ['irs','fra','lfut','repo'],
+                    'take': [True,False,False,False]
+                    })
+ 
+scope_psdf = spark.createDataFrame(scope_pddf)
+scope_psdf = scope_psdf.where(scope_psdf['take'])
+scope_psdf.show()
+pvdf.join(other=scope_psdf,on='product',how='inner').groupBy('pnl report').pivot("v").sum("PV").toPandas()
+# the 'product' column will be included once
+
 </pre>
