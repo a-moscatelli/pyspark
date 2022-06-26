@@ -1,4 +1,6 @@
 # pyspark
 
-doker: https://hub.docker.com/r/jupyter/pyspark-notebook
-frequantly used lines
+docker: https://hub.docker.com/r/jupyter/pyspark-notebook
+
+frequently used lines
+
