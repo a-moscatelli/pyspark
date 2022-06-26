@@ -1,0 +1,23 @@
+pnl report,report ccy,v,deal id,product,deal ccy,PV
+LDN desk CCY,CCY,v1,100,irs,GPB,1023.21
+LDN desk GPB,GPB,v1,100,irs,GPB,1007.69
+LDN desk USD,USD,v1,100,irs,GPB,1007.87
+LDN desk CCY,CCY,v1,101,irs,USD,1012.54
+LDN desk GPB,GPB,v1,101,irs,USD,1025.75
+LDN desk USD,USD,v1,101,irs,USD,1000.64
+SYD desk CCY,CCY,v1,202,repo,AUD,1012.98
+SYD desk AUD,AUD,v1,202,repo,AUD,1000.39
+SYD desk USD,USD,v1,202,repo,AUD,1012.88
+NY desk CCY,CCY,v1,303,sfut,EUR,1022.15
+NY desk USD,USD,v1,303,sfut,EUR,1025.25
+LDN desk CCY,CCY,v2,100,irs,GPB,1023.76
+LDN desk GPB,GPB,v2,100,irs,GPB,1022.59
+LDN desk USD,USD,v2,100,irs,GPB,1016.28
+LDN desk CCY,CCY,v2,102,irs,NZD,1021.24
+LDN desk GPB,GPB,v2,102,irs,NZD,1023.78
+LDN desk USD,USD,v2,102,irs,NZD,1003.2
+SG desk CCY,CCY,v2,202,repo,AUD,1000.34
+SG desk SGD,SGD,v2,202,repo,AUD,1029.21
+SG desk USD,USD,v2,202,repo,AUD,1018.36
+NY desk CCY,CCY,v2,303,sfut,EUR,1003.74
+NY desk USD,USD,v2,303,sfut,EUR,1018.8
