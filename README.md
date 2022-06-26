@@ -33,6 +33,5 @@ scope_psdf = spark.createDataFrame(scope_pddf)
 scope_psdf = scope_psdf.where(scope_psdf['take'])
 scope_psdf.show()
 pvdf.join(other=scope_psdf,on='product',how='inner').groupBy('pnl report').pivot("v").sum("PV").toPandas()
-# the 'product' column will be included once
 
 </pre>
