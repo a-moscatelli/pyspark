@@ -9,6 +9,7 @@ frequently used lines / use cases
 </h3>
 
 see pvdiff.ipynb and its rendered version pvdiff.html
+https://github.com/a-moscatelli/pyspark/blob/cc47ff7288fa009c0401703b2731657c9c046bf6/pvdiff.html
 
 <pre>
   
