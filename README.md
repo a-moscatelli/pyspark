@@ -10,7 +10,7 @@ frequently used lines / use cases
 
 see pvdiff.ipynb and its rendered version pvdiff.html
 
-<code>
+<pre>
   
 import pandas as pd
 pd.options.display.max_rows = None
@@ -22,4 +22,4 @@ pvdf.printSchema()
 pvdf = pvdf.where(pvdf['report ccy'] == 'CCY')
 pvdf.groupBy('pnl report').pivot("v").sum("PV").toPandas()
   
-</code>
+</pre>
