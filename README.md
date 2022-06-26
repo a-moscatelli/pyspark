@@ -8,8 +8,7 @@ frequently used lines / use cases
   use case 1: show the change in PV for each trading desk across versions (or dates) v1/v2
 </h3>
 
-see pvdiff.ipynb and its rendered version pvdiff.html
-https://github.com/a-moscatelli/pyspark/blob/cc47ff7288fa009c0401703b2731657c9c046bf6/pvdiff.html
+files: pvdiff.ipynb + its rendered pvdiff.html
 
 <pre>
   
