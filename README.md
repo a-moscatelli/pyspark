@@ -18,6 +18,7 @@ pd.options.display.max_columns = None
 pd.options.display.max_colwidth = None
 pd.options.display.precision = 2
 
+pvdf = spark.read.csv('pv_sample_input_1.csv',inferSchema=True,header=True)
 pvdf.printSchema()
 pvdf = pvdf.where(pvdf['report ccy'] == 'CCY')
 pvdf.groupBy('pnl report').pivot("v").sum("PV").toPandas()
