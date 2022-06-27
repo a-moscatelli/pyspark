@@ -38,7 +38,7 @@ pvdf.join(other=scope_psdf,on='product',how='inner').groupBy('pnl report').pivot
 
 
 <h3>
-  use case 2: efficiently check if two groups of columns match across versions (or dates) v1/v2
+  use case 2: efficiently check if a column-set of two dataframes match across versions (or dates) v1/v2
 </h3>
 
 <pre>
