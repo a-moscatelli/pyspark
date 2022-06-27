@@ -35,3 +35,13 @@ scope_psdf.show()
 pvdf.join(other=scope_psdf,on='product',how='inner').groupBy('pnl report').pivot("v").sum("PV").toPandas()
 
 </pre>
+
+
+<h3>
+  use case 2: efficiently check if two group of columns match
+</h3>
+
+<pre>
+# from pyspark.sql.functions import md5, contact_ws, array
+df = df.withColumn('hashcolname',md5(concat_ws('#',array(['column1','column2','column3']))))
+</pre>
