@@ -6,7 +6,8 @@ https://hub.docker.com/r/jupyter/pyspark-notebook
 use cases
 
 <h3>
-  use case 1: financial risk mgmt - show the change in PV for each trading desk across software versions (or dates) v1/v2
+  use case 1: financial risk mgmt
+  show the change in PV for each trading desk across software versions (or dates) v1/v2
 </h3>
 
 files:
@@ -18,7 +19,9 @@ import pandas as pd
 pd.options.display.max_rows = None
 pd.options.display.max_columns = None 
 pd.options.display.max_colwidth = None
-pd.options.display.precision = 2
+pd.options.display.float_format = lambda x: '{:,.2f}'.format(x)
+# pd.options.display.precision = 2
+
 
 pvdf = spark.read.csv('pv_sample_input_1.csv',inferSchema=True,header=True)
 pvdf.printSchema()
