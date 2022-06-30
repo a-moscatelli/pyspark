@@ -1,14 +1,16 @@
 # pyspark
 
-docker: https://hub.docker.com/r/jupyter/pyspark-notebook
+docker:
+https://hub.docker.com/r/jupyter/pyspark-notebook
 
-frequently used lines / use cases
+use cases
 
 <h3>
-  use case 1: show the change in PV for each trading desk across versions (or dates) v1/v2
+  use case 1: financial risk mgmt - show the change in PV for each trading desk across software versions (or dates) v1/v2
 </h3>
 
-files: pvdiff.ipynb + its rendered pvdiff.html
+files:
+pvdiff.ipynb + its rendered pvdiff.html
 
 <pre>
   
