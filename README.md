@@ -1,7 +1,8 @@
 # pyspark
 
-docker:
+projects based on docker:
 https://hub.docker.com/r/jupyter/pyspark-notebook
+
 
 use cases
 
