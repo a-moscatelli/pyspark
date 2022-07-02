@@ -30,4 +30,5 @@ https://github.com/a-moscatelli/pyspark/tree/main/MLLIB-FPmining (jupyter/python
   swiss-knife routines
 </h3>
 
-https://github.com/a-moscatelli/pyspark/tree/main/short (python)
+* https://github.com/a-moscatelli/pyspark/tree/main/short (python)
+* https://github.com/a-moscatelli/pyspark/tree/main/pseudo-random-csv-generator (python)
