@@ -27,7 +27,7 @@ FPG-FPmining-on-pvdiffs.ipynb + its exports: .html and .py<br>
 https://github.com/a-moscatelli/pyspark/tree/main/MLLIB-FPmining
 
 <h3>
-  swiss-knife routine 1:<br>
+  swiss-knife routines
 </h3>
 
 https://github.com/a-moscatelli/pyspark/tree/main/short
