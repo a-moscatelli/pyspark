@@ -14,7 +14,7 @@ use cases
 
 files:
 pvdiff.ipynb + its exports: .html and .py<br>
-https://github.com/a-moscatelli/pyspark/tree/main/dataframe-pivot
+https://github.com/a-moscatelli/pyspark/tree/main/dataframe-pivot (jupyter/python)
 
 <h3>
   use case 2:<br>
@@ -24,10 +24,10 @@ https://github.com/a-moscatelli/pyspark/tree/main/dataframe-pivot
 
 files:
 FPG-FPmining-on-pvdiffs.ipynb + its exports: .html and .py<br>
-https://github.com/a-moscatelli/pyspark/tree/main/MLLIB-FPmining
+https://github.com/a-moscatelli/pyspark/tree/main/MLLIB-FPmining (jupyter/python)
 
 <h3>
   swiss-knife routines
 </h3>
 
-https://github.com/a-moscatelli/pyspark/tree/main/short
+https://github.com/a-moscatelli/pyspark/tree/main/short (python)
