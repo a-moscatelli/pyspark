@@ -22,19 +22,19 @@ def colname(colSN):
 	return '_'.join(['field',coltype(colSN),str(colSN)])
 
 def colvalue(colSN,rowSN):
-	assert colSN>0
-	assert rowSN>=0	
-	x = rowSN%(10*colSN)
-	if coltype(colSN)=='i':
-		return int(x)
-	if coltype(colSN)=='f':
-		return float(round(x * 3.14,2))
-	if coltype(colSN)=='s':
-		return str('name-'+str(x))
-	if coltype(colSN)=='d':
-		return datetime.datetime(2022, 1+rowSN%11, 1+rowSN%27,0+rowSN%24)
-	if coltype(colSN)=='b':
-		return (rowSN+colSN)%5 ==0
+	assert colSN>=1
+	assert rowSN>=0
+	
+	lambdas = {
+		'i' : lambda colSN,rowSN: int(rowSN%(10*colSN)),
+		'f' : lambda colSN,rowSN: float(round(rowSN%(10*colSN) * 3.14,2)),
+		's' : lambda colSN,rowSN: str('name-'+str(rowSN%(10*colSN))),
+		'd' : lambda colSN,rowSN: datetime.datetime(2022, 1+rowSN%11, 1+rowSN%27,0+rowSN%24),
+		'b' : lambda colSN,rowSN: (rowSN+colSN)%5 ==0
+	}
+	
+	return lambdas[coltype(colSN)](colSN,rowSN)
+	
 
 
 fieldnames = ['id']+ [ colname(colSN) for colSN in range(1,int(number_of_fields_on_top_of_id)) ]	# List comprehension
