@@ -30,6 +30,4 @@ https://github.com/a-moscatelli/pyspark/tree/main/MLLIB-FPmining
   swiss-knife routine 1:<br>
 </h3>
 
-<pre>
 https://github.com/a-moscatelli/pyspark/tree/main/short
-</pre>
