@@ -7,7 +7,7 @@ use cases
 
 <h3>
   use case 1:<br>
-  financial risk mgmt<br>
+  (financial risk mgmt)<br>
   show the change in PV for each trading desk across software versions v1/v2<br>
   (or dates d1/d2) 
 </h3>
@@ -18,7 +18,7 @@ https://github.com/a-moscatelli/pyspark/tree/main/dataframe-pivot (jupyter/pytho
 
 <h3>
   use case 2:<br>
-  financial risk mgmt<br>
+  (financial risk mgmt)<br>
   mine the most common patterns that occur on PV diffs
 </h3>
 
