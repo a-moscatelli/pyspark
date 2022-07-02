@@ -7,8 +7,9 @@ use cases
 
 <h3>
   use case 1:<br>
-  financial risk mgmt
-  show the change in PV for each trading desk across software versions (or dates) v1/v2
+  financial risk mgmt<br>
+  show the change in PV for each trading desk across software versions v1/v2<br>
+  (or dates d1/d2) 
 </h3>
 
 files:
