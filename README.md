@@ -13,16 +13,16 @@ use cases
 </h3>
 
 files:
-pvdiff.ipynb + its exports: .html and .py
+pvdiff.ipynb + its exports: .html and .py<br>
 
 <h3>
   use case 2:<br>
   financial risk mgmt<br>
-  mine the most common patterns that occur on PV diffs<br>
+  mine the most common patterns that occur on PV diffs
 </h3>
 
 files:
-FPG-FPmining-on-pvdiffs.ipynb + its exports: .html and .py
+FPG-FPmining-on-pvdiffs.ipynb + its exports: .html and .py<br>
 https://github.com/a-moscatelli/pyspark/tree/main/MLLIB-FPmining
 
 <h3>
