@@ -14,6 +14,7 @@ use cases
 
 files:
 pvdiff.ipynb + its exports: .html and .py<br>
+https://github.com/a-moscatelli/pyspark/tree/main/dataframe-pivot
 
 <h3>
   use case 2:<br>
