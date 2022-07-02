@@ -6,7 +6,8 @@ https://hub.docker.com/r/jupyter/pyspark-notebook
 use cases
 
 <h3>
-  use case 1: financial risk mgmt
+  use case 1:<br>
+  financial risk mgmt
   show the change in PV for each trading desk across software versions (or dates) v1/v2
 </h3>
 
@@ -43,7 +44,8 @@ pvdf.join(other=scope_psdf,on='product',how='inner').groupBy('pnl report').pivot
 
 
 <h3>
-  use case 2: efficiently check if a column-set of two dataframes match across versions (or dates) v1/v2
+  use case 2:<br>
+  efficiently check if a column-set of two dataframes match across versions (or dates) v1/v2
 </h3>
 
 <pre>
