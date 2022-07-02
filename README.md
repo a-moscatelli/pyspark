@@ -13,10 +13,19 @@ use cases
 </h3>
 
 files:
-pvdiff.ipynb + its exports pvdiff.html and pvdiff.py
+pvdiff.ipynb + its exports: .html and .py
 
 <h3>
   use case 2:<br>
+  financial risk mgmt<br>
+  mine the most common patterns that occur on PV diffs<br>
+</h3>
+
+files:
+FPG-FPmining-on-pvdiffs.ipynb + its exports: .html and .py
+
+<h3>
+  swiss-knife routine 1:<br>
   efficiently check if a column-set of two dataframes match across versions (or dates) v1/v2
 </h3>
 
