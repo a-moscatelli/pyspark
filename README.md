@@ -2,7 +2,9 @@
 
 projects based on docker:
 https://hub.docker.com/r/jupyter/pyspark-notebook
+<br>
 for non-docker-setups:
+<br>
 pip install findspark
 
 <br>
