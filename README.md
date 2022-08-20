@@ -25,7 +25,7 @@ https://github.com/a-moscatelli/pyspark/tree/main/dataframe-pivot (jupyter/pytho
 <h3>
   use case 2:<br>
   (financial risk mgmt)<br>
-  mine the most common patterns that occur on PV diffs
+  mining the most common patterns that occur on PV diffs
 </h3>
 
 files:
