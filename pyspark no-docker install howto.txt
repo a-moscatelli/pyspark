@@ -1,0 +1,24 @@
+1:
+winutils (2.7.1) = shd be same version of hadoop HDFS :
+to copy under
+.\ spark-3.2.1-bin-hadoop2.7\bin
+.\ spark-3.2.1-bin-hadoop2.7\hadoop\bin
+
+2:
+have spark-defaults.conf
+with:
+spark.driver.memory              15g
+spark.local.dir                    C: /tempdir
+# unlikely to work …
+spark.worker.cleanup.enabled   true
+spark.worker.cleanup.appDataTtl             120
+
+3:
+copy
+mssql-jdbc-7.2.2.jre8
+under
+.\spark-3.2.1-bin-hadoop2.7\jars
+
+4.
+install the wheel of findspark
+….
