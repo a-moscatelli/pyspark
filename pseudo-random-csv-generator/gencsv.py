@@ -4,7 +4,8 @@ import datetime
 
 # deterministic, pseudo-random generation of composite datatype csv
 
-assert len(sys.argv) == 1+3, chr(32).join( [ 'syntax:', sys.argv[0], 'output_file_name.csv', 'number_of_records_on_top_of_header', 'number_of_fields_on_top_of_id' ])	# 'max_MB_size_anyway
+errormsg1 = chr(32).join( [ 'syntax:', sys.argv[0], 'output_file_name.csv/stdout', 'number_of_records(on_top_of_header)', 'number_of_fields(on_top_of_id)(good>=5' ])	# 'max_MB_size_anyway
+assert len(sys.argv) == 1+3, errormsg1
 
 
 this_file, output_file_name,number_of_records_on_top_of_header, number_of_fields_on_top_of_id = sys.argv		# , max_MB_size_anyway
@@ -41,12 +42,16 @@ def colvalue(colSN,rowSN):
 fieldnames = ['id']+ [ colname(colSN) for colSN in range(1,number_of_fields_on_top_of_id) ]
 # List Comprehension
 
-with open(output_file_name, 'w', newline='') as csvfile:
-    
+if output_file_name=='stdout':
+	csvfile = sys.stdout
+else:
+	csvfile = open(output_file_name, 'w', newline='')
+
+try:
 	writer = csv.writer(csvfile, quoting=csv.QUOTE_MINIMAL)
 	writer.writerow(fieldnames)
 	for rowSN in range(number_of_records_on_top_of_header):
 		row = [rowSN ] + [ colvalue(colSN,rowSN) for colSN in range(1,number_of_fields_on_top_of_id) ]
 		writer.writerow(row)
-
-csvfile.close()
+finally:
+    csvfile.close()
