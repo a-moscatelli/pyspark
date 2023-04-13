@@ -1,4 +1,5 @@
 dataset:
+
 trade     expiring today  seems to imply: break.    always.
 trade not expiring today  seems to imply: no break. almost always.
 
