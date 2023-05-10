@@ -1,7 +1,0 @@
-,antecedent,consequent,confidence,lift,support,lenA,lenC,diff_included_in_C
-0,"trade_ccy=AUDUSD,product=fx fwd,exp_date_m1=0",rPnL_diff=1,1.0,661.3756613756614,0.0015,3,1,True
-1,"trade_ccy=AUDUSD,product=fx fwd",rPnL_diff=1,1.0,661.3756613756614,0.001512,2,1,True
-2,"PnL_ccy=AUD,product=fx fwd,exp_date_m1=0",rPnL_diff=1,1.0,661.3756613756614,0.0015,3,1,True
-3,"PnL_ccy=AUD,trade_ccy=AUDUSD,product=fx fwd,exp_date_m1=0",rPnL_diff=1,1.0,661.3756613756614,0.0015,4,1,True
-4,"PnL_ccy=AUD,trade_ccy=AUDUSD,product=fx fwd",rPnL_diff=1,1.0,661.3756613756614,0.001512,3,1,True
-5,"PnL_ccy=AUD,product=fx fwd",rPnL_diff=1,1.0,661.3756613756614,0.001512,2,1,True

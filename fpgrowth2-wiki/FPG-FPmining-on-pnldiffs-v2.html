@@ -3,7 +3,7 @@
 <head><meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>FPG-FPmining-on-pnldiffs-v2</title><script type="text/javascript" src="http://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=3fDGo2DcaSQtd_Mhx_L9tDC_7SY9KKkUEM2goUWEwJ-URE-88CAPwJbhBNvwsFQsUor99W1sa-QSZMcZsOQLijCCa0WymqwnVmB57UKnpPvEJoxdWg51lkjWlCgpuQYy7XB_TzInAWur834xs3ycuw" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="http://ff.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cDovLzEyNy4wLjAuMTo4ODg4L25iY29udmVydC9odG1sL3dvcmsvRlBHLUZQbWluaW5nLW9uLXBubGRpZmZzLXYyLmlweW5iP2Rvd25sb2FkPXRydWU"/><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>FPG-FPmining-on-pnldiffs-v2</title><script type="text/javascript" src="http://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=yvgwCi05tF9buVOHBS5r2pdhstMy1ZARYMeKAbc_7xmnInX67GxZByQTWBfpBOo0umnF2vrPS7rKHM41gel5ckjkBm6NDwLZzQAtOe43YiDkwQ5y_jRVuTwjbbrykHiaobsw71plID5oQPwf99BrdQ" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="http://ff.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cDovLzEyNy4wLjAuMTo4ODg4L25iY29udmVydC9odG1sL3dvcmsvRlBHLUZQbWluaW5nLW9uLXBubGRpZmZzLXYyLmlweW5iP2Rvd25sb2FkPXRydWU"/><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 
 
 
@@ -15124,7 +15124,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pyspark</span>
 <span class="kn">from</span> <span class="nn">pyspark.sql</span> <span class="kn">import</span> <span class="n">SparkSession</span>
-<span class="n">spark</span> <span class="o">=</span> <span class="n">SparkSession</span><span class="o">.</span><span class="n">builder</span><span class="o">.</span><span class="n">appName</span><span class="p">(</span><span class="s2">&quot;gen_n_compare&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">getOrCreate</span><span class="p">()</span> 
+<span class="n">spark</span> <span class="o">=</span> <span class="n">SparkSession</span><span class="o">.</span><span class="n">builder</span><span class="o">.</span><span class="n">appName</span><span class="p">(</span><span class="s2">&quot;market_basket_assoc&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">getOrCreate</span><span class="p">()</span> 
 <span class="n">spark</span>
 </pre></div>
 
@@ -15161,7 +15161,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
               <dt>Master</dt>
                 <dd><code>local[*]</code></dd>
               <dt>AppName</dt>
-                <dd><code>gen_n_compare</code></dd>
+                <dd><code>market_basket_assoc</code></dd>
             </dl>
         </div>
         
@@ -15195,6 +15195,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">####</span>
+
 <span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
 <span class="kn">from</span> <span class="nn">pytz</span> <span class="kn">import</span> <span class="n">timezone</span>
 <span class="c1">####</span>
@@ -15253,6 +15254,43 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 </div>
 
+</div><div id="cell-id=e4aa7df7-2bc0-41a6-84fc-3336e7314ab4" class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">print_now</span><span class="p">()</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>2023-05-10 22:15:57 +08+0800
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
 </div>
 <div id="cell-id=1bcc9665-f866-411c-8098-ed24d1b644d4" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
@@ -15269,7 +15307,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#rerunnable</span>
@@ -15298,7 +15336,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>2023-05-05 22:09:28 +08+0800
+<pre>2023-05-10 22:15:57 +08+0800
 </pre>
 </div>
 </div>
@@ -15312,12 +15350,10 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pnl_v1</span><span class="o">.</span><span class="n">limit</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">toPandas</span><span class="p">()</span>  <span class="c1">#pnl_v1.show(3)</span>
-
-<span class="c1"># head and take are not appropriate</span>
 </pre></div>
 
      </div>
@@ -15333,7 +15369,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[5]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[6]:</div>
 
 
 
@@ -15440,7 +15476,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pnl_v2</span><span class="o">.</span><span class="n">limit</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">toPandas</span><span class="p">()</span>  <span class="c1">#pnl_v2.show(3)</span>
@@ -15459,7 +15495,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[6]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[7]:</div>
 
 
 
@@ -15574,18 +15610,62 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># NOT rerunnable</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># rerunnable.</span>
+<span class="c1"># renaming the RIGHTMOST fields of the two dataframes so as they are ready for join.</span>
 <span class="n">dx</span> <span class="o">=</span> <span class="n">pnl_v1</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s1">&#39;delim&#39;</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span>
 <span class="n">join_cols</span> <span class="o">=</span> <span class="n">pnl_v1</span><span class="o">.</span><span class="n">columns</span><span class="p">[:</span><span class="n">dx</span><span class="p">]</span>
 <span class="k">assert</span> <span class="n">join_cols</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;delim&#39;</span>
+<span class="c1"># renaming some cols:</span>
+<span class="n">pnl_v1r</span> <span class="o">=</span> <span class="n">pnl_v1</span>
+<span class="n">pnl_v2r</span> <span class="o">=</span> <span class="n">pnl_v2</span>
 <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">pnl_v1</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="n">dx</span><span class="p">:]:</span>
-    <span class="n">pnl_v1</span> <span class="o">=</span> <span class="n">pnl_v1</span><span class="o">.</span><span class="n">withColumnRenamed</span><span class="p">(</span><span class="n">c</span><span class="p">,</span><span class="n">c</span><span class="o">+</span><span class="s2">&quot;_v1&quot;</span><span class="p">)</span>
-    <span class="n">pnl_v2</span> <span class="o">=</span> <span class="n">pnl_v2</span><span class="o">.</span><span class="n">withColumnRenamed</span><span class="p">(</span><span class="n">c</span><span class="p">,</span><span class="n">c</span><span class="o">+</span><span class="s2">&quot;_v2&quot;</span><span class="p">)</span>
-<span class="c1">#pnl_v1.show(3)</span>
-<span class="c1">#pnl_v2.show(3)</span>
+    <span class="n">pnl_v1r</span> <span class="o">=</span> <span class="n">pnl_v1r</span><span class="o">.</span><span class="n">withColumnRenamed</span><span class="p">(</span><span class="n">c</span><span class="p">,</span><span class="n">c</span><span class="o">+</span><span class="s2">&quot;_v1&quot;</span><span class="p">)</span>
+    <span class="n">pnl_v2r</span> <span class="o">=</span> <span class="n">pnl_v2r</span><span class="o">.</span><span class="n">withColumnRenamed</span><span class="p">(</span><span class="n">c</span><span class="p">,</span><span class="n">c</span><span class="o">+</span><span class="s2">&quot;_v2&quot;</span><span class="p">)</span>
+<span class="c1"># pnl_v1r.show(3): the rightmost columns will have a name _v1</span>
+<span class="c1"># pnl_v2r.show(3): the rightmost columns will have a name _v2</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div id="cell-id=17479ac7-24da-43e1-9355-6fa15a070fa9" class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">use_hash</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="c1"># when True I will have all the left columns duplicated in the join df</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div id="cell-id=373677a6-fba1-4162-9739-839ff331901e" class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># rerunnable.</span>
+<span class="c1"># I compute the md5 of the concatenated string with the values of all the joinable colums</span>
+<span class="k">if</span> <span class="n">use_hash</span><span class="p">:</span>
+    <span class="n">pnl_v1rh</span> <span class="o">=</span> <span class="n">pnl_v1r</span><span class="o">.</span><span class="n">withColumn</span><span class="p">(</span><span class="s1">&#39;hashcolname&#39;</span><span class="p">,</span><span class="n">md5</span><span class="p">(</span><span class="n">concat_ws</span><span class="p">(</span><span class="s1">&#39;#&#39;</span><span class="p">,</span><span class="n">array</span><span class="p">(</span><span class="n">join_cols</span><span class="p">))))</span>
+    <span class="n">pnl_v2rh</span> <span class="o">=</span> <span class="n">pnl_v2r</span><span class="o">.</span><span class="n">withColumn</span><span class="p">(</span><span class="s1">&#39;hashcolname&#39;</span><span class="p">,</span><span class="n">md5</span><span class="p">(</span><span class="n">concat_ws</span><span class="p">(</span><span class="s1">&#39;#&#39;</span><span class="p">,</span><span class="n">array</span><span class="p">(</span><span class="n">join_cols</span><span class="p">))))</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="n">pnl_v1rh</span> <span class="o">=</span> <span class="n">pnl_v1r</span>
+    <span class="n">pnl_v2rh</span> <span class="o">=</span> <span class="n">pnl_v2r</span>
 </pre></div>
 
      </div>
@@ -15609,11 +15689,17 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pnl_v12</span> <span class="o">=</span> <span class="n">pnl_v1</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">other</span><span class="o">=</span><span class="n">pnl_v2</span><span class="p">,</span><span class="n">on</span><span class="o">=</span><span class="n">join_cols</span><span class="p">,</span><span class="n">how</span><span class="o">=</span><span class="s1">&#39;fullouter&#39;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">pnl_v12</span><span class="o">.</span><span class="n">count</span><span class="p">())</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># rerunnable.</span>
+<span class="k">if</span> <span class="n">use_hash</span><span class="p">:</span>
+    <span class="n">pnl_v12</span> <span class="o">=</span>  <span class="n">pnl_v1rh</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">other</span><span class="o">=</span><span class="n">pnl_v2rh</span><span class="p">,</span><span class="n">on</span><span class="o">=</span><span class="s1">&#39;hashcolname&#39;</span><span class="p">,</span><span class="n">how</span><span class="o">=</span><span class="s1">&#39;fullouter&#39;</span><span class="p">)</span> <span class="c1"># we assumed inner and fullouter will return the same result</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="n">pnl_v12</span> <span class="o">=</span> <span class="n">pnl_v1rh</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">other</span><span class="o">=</span><span class="n">pnl_v2rh</span><span class="p">,</span><span class="n">on</span><span class="o">=</span><span class="n">join_cols</span><span class="p">,</span><span class="n">how</span><span class="o">=</span><span class="s1">&#39;fullouter&#39;</span><span class="p">)</span> <span class="c1"># we assumed inner and fullouter will return the same result</span>
+
+<span class="n">pop_rc</span> <span class="o">=</span> <span class="n">pnl_v12</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;pop_rc:&#39;</span><span class="p">,</span><span class="n">pop_rc</span><span class="p">)</span>
 <span class="n">pnl_v12</span><span class="o">.</span><span class="n">limit</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">toPandas</span><span class="p">()</span>
 </pre></div>
 
@@ -15634,13 +15720,13 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>500000
+<pre>pop_rc: 500000
 </pre>
 </div>
 </div>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[8]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[11]:</div>
 
 
 
@@ -15767,13 +15853,16 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">cc</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;uPnL&quot;</span><span class="p">,</span><span class="s2">&quot;rPnL&quot;</span><span class="p">,</span><span class="s2">&quot;PnL&quot;</span><span class="p">]:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">cc</span><span class="p">)</span>
-    <span class="n">pnl_v12</span> <span class="o">=</span> <span class="n">pnl_v12</span><span class="o">.</span><span class="n">withColumn</span><span class="p">(</span><span class="n">cc</span><span class="o">+</span><span class="s2">&quot;_diff&quot;</span><span class="p">,</span> <span class="n">when</span><span class="p">(</span><span class="n">pnl_v12</span><span class="p">[</span><span class="n">cc</span><span class="o">+</span><span class="s2">&quot;_v1&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="n">pnl_v12</span><span class="p">[</span><span class="n">cc</span><span class="o">+</span><span class="s2">&quot;_v2&quot;</span><span class="p">],</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">otherwise</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">pnl_v12</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">pnl_v12</span><span class="p">[</span><span class="n">cc</span><span class="o">+</span><span class="s2">&quot;_diff&quot;</span><span class="p">]</span><span class="o">==</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">count</span><span class="p">())</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># rerunnable.</span>
+<span class="n">pnl_v12b</span> <span class="o">=</span> <span class="n">pnl_v12</span>
+<span class="k">for</span> <span class="n">cc</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;uPnL&quot;</span><span class="p">,</span><span class="s2">&quot;rPnL&quot;</span><span class="p">,</span><span class="s2">&quot;PnL&quot;</span><span class="p">]:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;adding a diff boolean flag for column&#39;</span><span class="p">,</span><span class="n">cc</span><span class="p">,</span><span class="s1">&#39;as&#39;</span><span class="p">,</span><span class="n">cc</span><span class="o">+</span><span class="s2">&quot;_isdiff&quot;</span><span class="p">)</span>
+    <span class="n">pnl_v12b</span> <span class="o">=</span> <span class="n">pnl_v12b</span><span class="o">.</span><span class="n">withColumn</span><span class="p">(</span><span class="n">cc</span><span class="o">+</span><span class="s2">&quot;_isdiff&quot;</span><span class="p">,</span> <span class="n">when</span><span class="p">(</span><span class="n">pnl_v12b</span><span class="p">[</span><span class="n">cc</span><span class="o">+</span><span class="s2">&quot;_v1&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="n">pnl_v12b</span><span class="p">[</span><span class="n">cc</span><span class="o">+</span><span class="s2">&quot;_v2&quot;</span><span class="p">],</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">otherwise</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
+    <span class="n">rc</span> <span class="o">=</span> <span class="n">pnl_v12b</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">pnl_v12b</span><span class="p">[</span><span class="n">cc</span><span class="o">+</span><span class="s2">&quot;_isdiff&quot;</span><span class="p">]</span><span class="o">==</span><span class="n">lit</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;diff rowcount:&#39;</span><span class="p">,</span><span class="n">rc</span><span class="p">,</span><span class="s1">&#39;- min support should be:&#39;</span><span class="p">,</span><span class="n">rc</span><span class="o">/</span><span class="n">pop_rc</span><span class="p">)</span> 
 </pre></div>
 
      </div>
@@ -15793,12 +15882,12 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>uPnL
-2090
-rPnL
-756
-PnL
-199265
+<pre>adding a diff boolean flag for column uPnL as uPnL_isdiff
+diff rowcount: 2090 - min support should be: 0.00418
+adding a diff boolean flag for column rPnL as rPnL_isdiff
+diff rowcount: 756 - min support should be: 0.001512
+adding a diff boolean flag for column PnL as PnL_isdiff
+diff rowcount: 199265 - min support should be: 0.39853
 </pre>
 </div>
 </div>
@@ -15812,13 +15901,14 @@ PnL
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;add flag: exp_date == report_date - 1&quot;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># rerunnable.</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;adding a signal: exp_date == report_date - 1&quot;</span><span class="p">)</span>
 <span class="n">T_plus_n_watch</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
-<span class="n">pnl_v12</span> <span class="o">=</span> <span class="n">pnl_v12</span><span class="o">.</span><span class="n">withColumn</span><span class="p">(</span><span class="s2">&quot;exp_date_m1&quot;</span><span class="p">,</span> <span class="n">when</span><span class="p">(</span><span class="n">pnl_v12</span><span class="o">.</span><span class="n">exp_date_repdate_diff</span> <span class="o">==</span> <span class="n">lit</span><span class="p">(</span><span class="n">T_plus_n_watch</span><span class="p">),</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">otherwise</span><span class="p">(</span><span class="mi">0</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">pnl_v12</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">pnl_v12</span><span class="p">[</span><span class="s2">&quot;exp_date_m1&quot;</span><span class="p">]</span><span class="o">==</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">count</span><span class="p">())</span>
+<span class="n">pnl_v12bS</span> <span class="o">=</span> <span class="n">pnl_v12b</span><span class="o">.</span><span class="n">withColumn</span><span class="p">(</span><span class="s2">&quot;is_exp_date_m1&quot;</span><span class="p">,</span> <span class="n">when</span><span class="p">(</span><span class="n">pnl_v12b</span><span class="o">.</span><span class="n">exp_date_repdate_diff</span> <span class="o">==</span> <span class="n">lit</span><span class="p">(</span><span class="n">T_plus_n_watch</span><span class="p">),</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">otherwise</span><span class="p">(</span><span class="mi">0</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;count of diff:&#39;</span><span class="p">,</span><span class="n">pnl_v12bS</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">pnl_v12bS</span><span class="p">[</span><span class="s2">&quot;is_exp_date_m1&quot;</span><span class="p">]</span><span class="o">==</span><span class="n">lit</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span><span class="o">.</span><span class="n">count</span><span class="p">())</span>
 </pre></div>
 
      </div>
@@ -15838,8 +15928,8 @@ PnL
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>add flag: exp_date == report_date - 1
-6073
+<pre>adding a signal: exp_date == report_date - 1
+count of diff: 6073
 </pre>
 </div>
 </div>
@@ -15853,11 +15943,13 @@ PnL
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pnl_v12</span> <span class="o">=</span> <span class="n">pnl_v12</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s2">&quot;trade_date_repdate_diff&quot;</span><span class="p">)</span>
-<span class="n">pnl_v12</span> <span class="o">=</span> <span class="n">pnl_v12</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s2">&quot;exp_date_repdate_diff&quot;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># rerunnable.</span>
+<span class="c1"># disposable columns...</span>
+<span class="n">pnl_v12bS</span> <span class="o">=</span> <span class="n">pnl_v12bS</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s2">&quot;trade_date_repdate_diff&quot;</span><span class="p">)</span>
+<span class="n">pnl_v12bS</span> <span class="o">=</span> <span class="n">pnl_v12bS</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s2">&quot;exp_date_repdate_diff&quot;</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -15872,19 +15964,36 @@ PnL
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="the-table-ready-for-the-rule-mining">the table ready for the rule mining<a class="anchor-link" href="#the-table-ready-for-the-rule-mining">&#182;</a></h3>
+<h3 id="the-table-ready-for-the-rule-mining:">the table ready for the rule mining:<a class="anchor-link" href="#the-table-ready-for-the-rule-mining:">&#182;</a></h3>
 </div>
 </div>
 </div>
+</div><div id="cell-id=a64ac456-981e-4049-aab9-ebfec49020c1" class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># pnl_v12bS.printSchema()</span>
+<span class="c1"># pnl_v12bS.columns</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
 </div><div id="cell-id=40282d7f-ba74-48fa-ad28-44f24b62606d" class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pnl_v12</span><span class="o">.</span><span class="n">limit</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">toPandas</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pnl_v12bS</span><span class="o">.</span><span class="n">limit</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">toPandas</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -15900,7 +16009,7 @@ PnL
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[12]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[16]:</div>
 
 
 
@@ -15940,10 +16049,10 @@ PnL
       <th>uPnL_v2</th>
       <th>rPnL_v2</th>
       <th>PnL_v2</th>
-      <th>uPnL_diff</th>
-      <th>rPnL_diff</th>
-      <th>PnL_diff</th>
-      <th>exp_date_m1</th>
+      <th>uPnL_isdiff</th>
+      <th>rPnL_isdiff</th>
+      <th>PnL_isdiff</th>
+      <th>is_exp_date_m1</th>
     </tr>
   </thead>
   <tbody>
@@ -16031,6 +16140,154 @@ PnL
 </div>
 
 </div>
+<div id="cell-id=e0d35894-9ae0-4f10-a466-a9af64698d55" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="start-of-rule-mining">start of rule-mining<a class="anchor-link" href="#start-of-rule-mining">&#182;</a></h2>
+</div>
+</div>
+</div>
+</div><div id="cell-id=d66ba648-8088-4498-8523-a13fdfcc10c3" class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">pyspark.sql.functions</span> <span class="kn">import</span> <span class="n">concat</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div id="cell-id=7143a8a2-44ea-4b79-8309-49156d6811d9" class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">get_basket</span><span class="p">(</span><span class="n">pnl</span><span class="p">,</span><span class="n">rule_antecedent_cols</span><span class="p">,</span><span class="n">rule_consequent_col</span><span class="p">):</span>
+    <span class="c1"># https://stackoverflow.com/questions/51325092/pyspark-fp-growth-algorithm-raise-valueerrorparams-must-be-either-a-param</span>
+    <span class="c1"># you cannot have an array in a cell containing 0 multiple times. array items must be unique. so:</span>
+    <span class="n">rule_ac</span> <span class="o">=</span> <span class="n">rule_antecedent_cols</span> <span class="o">+</span> <span class="n">rule_consequent_col</span>
+    <span class="k">for</span> <span class="n">rulecol</span> <span class="ow">in</span> <span class="n">rule_ac</span><span class="p">:</span>
+        <span class="c1"># every value in every column in rule_ac is prefixed with its own column name and &quot;=&quot;.</span>
+        <span class="n">pnl</span> <span class="o">=</span> <span class="n">pnl</span><span class="o">.</span><span class="n">withColumn</span><span class="p">(</span><span class="n">rulecol</span><span class="p">,</span> <span class="n">concat</span><span class="p">(</span><span class="n">lit</span><span class="p">(</span><span class="n">rulecol</span><span class="o">+</span><span class="s2">&quot;=&quot;</span><span class="p">),</span><span class="n">col</span><span class="p">(</span><span class="n">rulecol</span><span class="p">)))</span>
+
+    <span class="k">return</span> <span class="n">pnl</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s1">&#39;id&#39;</span><span class="p">,</span><span class="n">array</span><span class="p">(</span><span class="n">rule_ac</span><span class="p">)</span><span class="o">.</span><span class="n">alias</span><span class="p">(</span><span class="s2">&quot;items&quot;</span><span class="p">))</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div id="cell-id=1f2b20f9-503d-4d2d-a1b7-4783e0b66a5b" class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[19]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">get_itempopularity</span><span class="p">(</span><span class="n">model</span><span class="p">,</span><span class="n">rule_consequent_cols</span><span class="p">):</span>
+    <span class="k">assert</span> <span class="nb">len</span><span class="p">(</span><span class="n">rule_consequent_cols</span><span class="p">)</span><span class="o">==</span><span class="mi">1</span>
+    <span class="n">watch_conseq</span> <span class="o">=</span> <span class="n">rule_consequent_cols</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot;=1&quot;</span> <span class="c1"># &#39;uPnL_diff=1&#39;</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;watch_conseq:&#39;</span><span class="p">,</span><span class="n">watch_conseq</span><span class="p">)</span>
+    <span class="n">watch_alias</span> <span class="o">=</span> <span class="s1">&#39;is_conseq_in&#39;</span>
+    <span class="c1">#colz_alias = &#39;diff_included_in_C&#39;</span>
+
+    <span class="n">itempopularity</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">freqItemsets</span>
+    <span class="c1"># ... FutureWarning: Deprecated in 3.0.0. Use SparkSession.builder.getOrCreate() instead</span>
+    <span class="c1"># ... not under my control</span>
+
+    <span class="n">itempopularity</span><span class="o">.</span><span class="n">createOrReplaceTempView</span><span class="p">(</span><span class="s2">&quot;itempopularity&quot;</span><span class="p">)</span>
+    <span class="c1"># Then Query the temp view</span>
+    <span class="c1">#print(&quot;Top 20&quot;)</span>
+    <span class="n">dfo</span> <span class="o">=</span> <span class="n">spark</span><span class="o">.</span><span class="n">sql</span><span class="p">(</span><span class="s2">&quot;SELECT * FROM itempopularity ORDER BY freq desc&quot;</span><span class="p">)</span>
+    <span class="c1">#dfo.printSchema()</span>
+    <span class="n">dofd</span><span class="o">=</span><span class="n">dfo</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s1">&#39;items&#39;</span><span class="p">,</span><span class="s1">&#39;freq&#39;</span><span class="p">,</span><span class="n">size</span><span class="p">(</span><span class="n">dfo</span><span class="o">.</span><span class="n">items</span><span class="p">)</span><span class="o">.</span><span class="n">alias</span><span class="p">(</span><span class="s1">&#39;size&#39;</span><span class="p">),</span><span class="n">array_contains</span><span class="p">(</span><span class="n">dfo</span><span class="o">.</span><span class="n">items</span><span class="p">,</span> <span class="n">lit</span><span class="p">(</span><span class="n">watch_conseq</span><span class="p">))</span><span class="o">.</span><span class="n">alias</span><span class="p">(</span><span class="n">watch_alias</span><span class="p">))</span>
+        <span class="c1"># ... .where(  # .collect()</span>
+    <span class="k">return</span> <span class="n">dofd</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div id="cell-id=9065aaf1-a7c0-4e81-bb5e-7d5ef2718c1c" class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">get_relevantbasketpopularity</span><span class="p">(</span><span class="n">ipdf</span><span class="p">):</span>
+    <span class="n">watch_alias</span> <span class="o">=</span> <span class="s1">&#39;is_conseq_in&#39;</span>
+    <span class="k">return</span> <span class="n">ipdf</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="s1">&#39;size &gt;= 2 and &#39;</span><span class="o">+</span> <span class="n">watch_alias</span><span class="p">)</span> <span class="c1"># do not include the baskets with a single item</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div id="cell-id=30deb85d-1bc9-48cc-912f-7c3405d90b97" class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[21]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">show_assoc</span><span class="p">(</span><span class="n">model</span><span class="p">,</span><span class="n">display</span><span class="p">,</span><span class="n">rule_consequent_cols</span><span class="p">):</span>
+    <span class="n">watch_conseq</span> <span class="o">=</span> <span class="n">rule_consequent_cols</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot;=1&quot;</span> <span class="c1"># &#39;uPnL_diff=1&#39;</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;watching conseq:&#39;</span><span class="p">,</span><span class="n">watch_conseq</span><span class="p">)</span>
+    <span class="c1">#watch_alias = &#39;is_conseq_in&#39;</span>
+    <span class="n">colz_alias</span> <span class="o">=</span> <span class="s1">&#39;diff_included_in_C&#39;</span>
+
+    <span class="n">assoc</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">associationRules</span>
+    <span class="n">assoc</span><span class="o">.</span><span class="n">createOrReplaceTempView</span><span class="p">(</span><span class="s2">&quot;assoc&quot;</span><span class="p">)</span>
+    <span class="c1"># Then Query the temp view</span>
+    <span class="n">df2a</span> <span class="o">=</span> <span class="n">spark</span><span class="o">.</span><span class="n">sql</span><span class="p">(</span><span class="s2">&quot;SELECT * FROM assoc ORDER BY confidence desc&quot;</span><span class="p">)</span>
+    <span class="n">df2b</span> <span class="o">=</span> <span class="n">df2a</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s1">&#39;antecedent&#39;</span><span class="p">,</span><span class="s1">&#39;consequent&#39;</span><span class="p">,</span><span class="s1">&#39;confidence&#39;</span><span class="p">,</span><span class="s1">&#39;lift&#39;</span><span class="p">,</span><span class="s1">&#39;support&#39;</span><span class="p">,</span> \
+             <span class="n">size</span><span class="p">(</span><span class="n">df2a</span><span class="o">.</span><span class="n">antecedent</span><span class="p">)</span><span class="o">.</span><span class="n">alias</span><span class="p">(</span><span class="s1">&#39;lenA&#39;</span><span class="p">),</span><span class="n">size</span><span class="p">(</span><span class="n">df2a</span><span class="o">.</span><span class="n">consequent</span><span class="p">)</span><span class="o">.</span><span class="n">alias</span><span class="p">(</span><span class="s1">&#39;lenC&#39;</span><span class="p">),</span> \
+             <span class="n">array_contains</span><span class="p">(</span><span class="n">df2a</span><span class="o">.</span><span class="n">consequent</span><span class="p">,</span><span class="n">watch_conseq</span><span class="p">)</span><span class="o">.</span><span class="n">alias</span><span class="p">(</span><span class="n">colz_alias</span><span class="p">))</span>
+    <span class="n">dofdx2</span> <span class="o">=</span> <span class="n">df2b</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">colz_alias</span><span class="p">)</span>
+    
+    <span class="k">if</span> <span class="n">display</span> <span class="o">==</span> <span class="s2">&quot;all,confid desc&quot;</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">df2a</span>
+    <span class="k">if</span> <span class="n">display</span> <span class="o">==</span> <span class="s2">&quot;all+criteria&quot;</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">df2b</span>
+    <span class="k">if</span> <span class="n">display</span> <span class="o">==</span> <span class="s2">&quot;top assoc&quot;</span><span class="p">:</span>
+        <span class="c1"># df2b = show_assoc(model,&quot;all+criteria</span>
+        <span class="c1"># dofdx2 = df2b.where(&#39;lenC==1 and Cisdpnlnz&#39;)</span>
+        <span class="k">return</span> <span class="n">dofdx2</span><span class="o">.</span><span class="n">orderBy</span><span class="p">(</span><span class="n">col</span><span class="p">(</span><span class="s2">&quot;lift&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">desc</span><span class="p">(),</span><span class="n">col</span><span class="p">(</span><span class="s2">&quot;lenA&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">asc</span><span class="p">())</span>
+    <span class="k">if</span> <span class="n">display</span> <span class="o">==</span> <span class="s2">&quot;top assoc for csv output&quot;</span><span class="p">:</span>
+        <span class="n">dofdx2noa</span> <span class="o">=</span> <span class="n">dofdx2</span><span class="o">.</span><span class="n">withColumn</span><span class="p">(</span><span class="s2">&quot;antecedent&quot;</span><span class="p">,</span> <span class="n">concat_ws</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="p">,</span><span class="n">col</span><span class="p">(</span><span class="s2">&quot;antecedent&quot;</span><span class="p">)))</span>
+        <span class="n">dofdx2noa</span> <span class="o">=</span> <span class="n">dofdx2noa</span><span class="o">.</span><span class="n">withColumn</span><span class="p">(</span><span class="s2">&quot;consequent&quot;</span><span class="p">,</span> <span class="n">concat_ws</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="p">,</span><span class="n">col</span><span class="p">(</span><span class="s2">&quot;consequent&quot;</span><span class="p">)))</span>
+        <span class="k">return</span> <span class="n">dofdx2noa</span>
+            <span class="c1">## dofdx2noa.toPandas().to_csv(fname_v1+&quot;.output.&quot;+rule_consequent_cols[0]+&quot;.assoc.csv&quot;)</span>
+            <span class="c1"># dofdx2noa.coalesce(1).write.option(&quot;header&quot;,True).mode(&#39;overwrite&#39;).csv(fname_v1+&quot;.assoc.csv&quot;)</span>
+            <span class="c1"># thanks https://stackoverflow.com/questions/43661660/spark-how-to-write-a-single-csv-file-without-folder</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div>
 <div id="cell-id=4e8cb993-abdf-423d-a0a4-65ef634c7fc6" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -16041,23 +16298,50 @@ PnL
 </div>
 </div>
 </div>
+</div><div id="cell-id=b1922b30-c3d0-41f6-8e77-945157839b36" class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[22]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">minSupport_</span> <span class="o">=</span> <span class="mf">0.0012</span>
+<span class="n">minConfidence_</span> <span class="o">=</span> <span class="mf">0.9</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div>
+<div id="cell-id=b0b8498c-7738-4f34-a620-4d6080cbad33" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="consequent-1:-rPnL">consequent 1: rPnL<a class="anchor-link" href="#consequent-1:-rPnL">&#182;</a></h2>
+</div>
+</div>
+</div>
 </div><div id="cell-id=c26660f2-9431-40b4-8fb2-798bd5c077e3" class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[52]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[23]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># this pandas is now ready for rule-mining.</span>
-<span class="n">rule_antecedent_cols</span> <span class="o">=</span> <span class="p">[</span> <span class="s2">&quot;trade_ccy&quot;</span><span class="p">,</span><span class="s2">&quot;product&quot;</span><span class="p">,</span><span class="s2">&quot;disc_curve&quot;</span><span class="p">,</span><span class="s2">&quot;fx_cut&quot;</span><span class="p">,</span><span class="s2">&quot;market&quot;</span><span class="p">,</span><span class="s2">&quot;PnL_ccy&quot;</span><span class="p">,</span><span class="s2">&quot;exp_date_m1&quot;</span> <span class="p">]</span>
+<span class="n">rule_antecedent_cols</span> <span class="o">=</span> <span class="p">[</span> <span class="s2">&quot;trade_ccy&quot;</span><span class="p">,</span><span class="s2">&quot;product&quot;</span><span class="p">,</span><span class="s2">&quot;disc_curve&quot;</span><span class="p">,</span><span class="s2">&quot;fx_cut&quot;</span><span class="p">,</span><span class="s2">&quot;market&quot;</span><span class="p">,</span><span class="s2">&quot;PnL_ccy&quot;</span><span class="p">,</span><span class="s2">&quot;is_exp_date_m1&quot;</span> <span class="p">]</span>
+<span class="n">rule_consequent_cols</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;rPnL_isdiff&quot;</span><span class="p">]</span>
 <span class="c1">#rule_consequent_cols = [ &quot;uPnL_diff&quot;] # , &quot;rPnL_diff&quot;] # , &quot;PnL_diff&quot; ]</span>
 
-<span class="n">rule_consequent_cols</span> <span class="o">=</span> <span class="p">[</span> <span class="s2">&quot;uPnL_diff&quot;</span><span class="p">]</span>
+<span class="c1"># ac = antec and conseq</span>
 
-<span class="n">rule_ac</span> <span class="o">=</span> <span class="n">rule_antecedent_cols</span> <span class="o">+</span> <span class="n">rule_consequent_cols</span> 
-<span class="c1"># goal:</span>
-<span class="c1">#build datafram pnl3 with items column with the fields above</span>
+<span class="c1"># goal: to build datafram pnl3 with items column with the fields above</span>
 </pre></div>
 
      </div>
@@ -16065,64 +16349,16 @@ PnL
 </div>
 </div>
 
-</div><div id="cell-id=6af856c1-cd50-4769-a88f-d1ae2e208dd1" class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div id="cell-id=9790ce1a-8fa6-4f40-826d-502866054488" class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[53]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[24]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">rule_ac</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>[&#39;trade_ccy&#39;, &#39;product&#39;, &#39;disc_curve&#39;, &#39;fx_cut&#39;, &#39;market&#39;, &#39;PnL_ccy&#39;, &#39;exp_date_m1&#39;, &#39;uPnL_diff&#39;]
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div><div id="cell-id=7143a8a2-44ea-4b79-8309-49156d6811d9" class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[54]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">pyspark.sql.functions</span> <span class="kn">import</span> <span class="n">concat</span>
-
-<span class="c1"># https://stackoverflow.com/questions/51325092/pyspark-fp-growth-algorithm-raise-valueerrorparams-must-be-either-a-param</span>
-<span class="c1"># you cannot have an array in a cell containing 0 multiple times. array items must be unique. so:</span>
-<span class="n">pnl</span> <span class="o">=</span> <span class="n">pnl_v12</span>
-
-<span class="k">for</span> <span class="n">rulecol</span> <span class="ow">in</span> <span class="n">rule_ac</span><span class="p">:</span>
-    <span class="c1"># every value in every column in rule_ac is prefixed with its own column name and &quot;=&quot;.</span>
-    <span class="n">pnl</span> <span class="o">=</span> <span class="n">pnl</span><span class="o">.</span><span class="n">withColumn</span><span class="p">(</span><span class="n">rulecol</span><span class="p">,</span> <span class="n">concat</span><span class="p">(</span><span class="n">lit</span><span class="p">(</span><span class="n">rulecol</span><span class="o">+</span><span class="s2">&quot;=&quot;</span><span class="p">),</span><span class="n">col</span><span class="p">(</span><span class="n">rulecol</span><span class="p">)))</span>
-
-<span class="n">pnl3</span> <span class="o">=</span> <span class="n">pnl</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s1">&#39;id&#39;</span><span class="p">,</span><span class="n">array</span><span class="p">(</span><span class="n">rule_ac</span><span class="p">)</span><span class="o">.</span><span class="n">alias</span><span class="p">(</span><span class="s2">&quot;items&quot;</span><span class="p">))</span>
-<span class="c1">#pnl3.printSchema()</span>
-<span class="n">pnl3</span><span class="o">.</span><span class="n">limit</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">toPandas</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pnlb</span> <span class="o">=</span> <span class="n">get_basket</span><span class="p">(</span><span class="n">pnl_v12bS</span><span class="p">,</span><span class="n">rule_antecedent_cols</span><span class="p">,</span><span class="n">rule_consequent_cols</span><span class="p">)</span>
+<span class="n">pnlb</span><span class="o">.</span><span class="n">limit</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">toPandas</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -16138,7 +16374,7 @@ PnL
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[54]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[24]:</div>
 
 
 
@@ -16169,17 +16405,17 @@ PnL
     <tr>
       <th>0</th>
       <td>5</td>
-      <td>[trade_ccy=USDZMW, product=fx fwd, disc_curve=USDZMW-GN, fx_cut=NYC1000, market=GN, PnL_ccy=USD, exp_date_m1=0, uPnL_diff=0]</td>
+      <td>[trade_ccy=USDZMW, product=fx fwd, disc_curve=USDZMW-GN, fx_cut=NYC1000, market=GN, PnL_ccy=USD, is_exp_date_m1=0, rPnL_isdiff=0]</td>
     </tr>
     <tr>
       <th>1</th>
       <td>6</td>
-      <td>[trade_ccy=USDMNT, product=fx spot, disc_curve=USDMNT-GD, fx_cut=NYC1000, market=GD, PnL_ccy=USD, exp_date_m1=0, uPnL_diff=0]</td>
+      <td>[trade_ccy=USDMNT, product=fx spot, disc_curve=USDMNT-GD, fx_cut=NYC1000, market=GD, PnL_ccy=USD, is_exp_date_m1=0, rPnL_isdiff=0]</td>
     </tr>
     <tr>
       <th>2</th>
       <td>8</td>
-      <td>[trade_ccy=USDLSL, product=fx futures, disc_curve=USDLSL-TH, fx_cut=TKY1500, market=TH, PnL_ccy=USD, exp_date_m1=0, uPnL_diff=0]</td>
+      <td>[trade_ccy=USDLSL, product=fx futures, disc_curve=USDLSL-TH, fx_cut=TKY1500, market=TH, PnL_ccy=USD, is_exp_date_m1=0, rPnL_isdiff=0]</td>
     </tr>
   </tbody>
 </table>
@@ -16197,40 +16433,10 @@ PnL
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[55]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[25]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># above are &quot;market baskets&quot; with a number of items. Let&#39;s mine antecedent/consequent rules.</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div>
-<div id="cell-id=e0d35894-9ae0-4f10-a466-a9af64698d55" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="start-of-rule-mining">start of rule-mining<a class="anchor-link" href="#start-of-rule-mining">&#182;</a></h2>
-</div>
-</div>
-</div>
-</div><div id="cell-id=b1922b30-c3d0-41f6-8e77-945157839b36" class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[56]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">time</span>
-
-<span class="n">minSupport_</span> <span class="o">=</span> <span class="mf">0.0012</span>
-<span class="n">minConfidence_</span> <span class="o">=</span> <span class="mf">0.9</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># above are the &quot;market baskets&quot;, each with a number of items. Let&#39;s mine antecedent/consequent rules.</span>
 </pre></div>
 
      </div>
@@ -16243,14 +16449,17 @@ PnL
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[57]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[26]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># https://spark.apache.org/docs/latest/api/python/reference/api/pyspark.ml.fpm.FPGrowth.html = 3.4.0</span>
 <span class="c1"># https://spark.apache.org/docs/3.1.1/api/python/reference/api/pyspark.ml.fpm.FPGrowth.html</span>
+<span class="kn">import</span> <span class="nn">time</span>
 <span class="kn">from</span> <span class="nn">pyspark.ml.fpm</span> <span class="kn">import</span> <span class="n">FPGrowth</span>
 <span class="n">fpGrowth</span> <span class="o">=</span> <span class="n">FPGrowth</span><span class="p">(</span><span class="n">itemsCol</span><span class="o">=</span><span class="s2">&quot;items&quot;</span><span class="p">,</span> <span class="n">minSupport</span><span class="o">=</span><span class="n">minSupport_</span><span class="p">,</span> <span class="n">minConfidence</span><span class="o">=</span><span class="n">minConfidence_</span><span class="p">)</span> <span class="c1"># minSupport=0.2, minConfidence=0.1</span>
-<span class="n">model</span> <span class="o">=</span> <span class="n">fpGrowth</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">pnl3</span><span class="p">)</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">fpGrowth</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">pnlb</span><span class="p">)</span>
+
+<span class="c1"># now you have the model.</span>
 </pre></div>
 
      </div>
@@ -16258,71 +16467,32 @@ PnL
 </div>
 </div>
 
-</div><div id="cell-id=202f3a8b-02a6-4b8c-8ed0-d53c3562c2b0" class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div>
+<div id="cell-id=152f1fc6-9096-4ab9-bf9b-7daefa2e681b" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="by-the-way---see-items'-popularity">by the way - see items' popularity<a class="anchor-link" href="#by-the-way---see-items'-popularity">&#182;</a></h3>
+</div>
+</div>
+</div>
+</div><div id="cell-id=b78c226b-e173-49cf-aa09-5348927a728c" class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[58]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">watch_conseq</span> <span class="o">=</span> <span class="n">rule_consequent_cols</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">+</span><span class="s2">&quot;=1&quot;</span> <span class="c1"># &#39;uPnL_diff=1&#39;</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;watch_conseq:&#39;</span><span class="p">,</span><span class="n">watch_conseq</span><span class="p">)</span>
-<span class="n">watch_alias</span> <span class="o">=</span> <span class="s1">&#39;is_conseq_in&#39;</span>
-<span class="n">colz_alias</span> <span class="o">=</span> <span class="s1">&#39;diff_included_in_C&#39;</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>watch_conseq: uPnL_diff=1
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div><div id="cell-id=1f2b20f9-503d-4d2d-a1b7-4783e0b66a5b" class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[59]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[27]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">epoch_a</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
- 
-<span class="n">itempopularity</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">freqItemsets</span>
-<span class="c1"># ... FutureWarning: Deprecated in 3.0.0. Use SparkSession.builder.getOrCreate() instead</span>
-<span class="c1"># ... not under my control</span>
-
-<span class="n">itempopularity</span><span class="o">.</span><span class="n">createOrReplaceTempView</span><span class="p">(</span><span class="s2">&quot;itempopularity&quot;</span><span class="p">)</span>
-<span class="c1"># Then Query the temp view</span>
-<span class="c1">#print(&quot;Top 20&quot;)</span>
-<span class="n">dfo</span> <span class="o">=</span> <span class="n">spark</span><span class="o">.</span><span class="n">sql</span><span class="p">(</span><span class="s2">&quot;SELECT * FROM itempopularity ORDER BY freq desc&quot;</span><span class="p">)</span>
-<span class="c1">#dfo.printSchema()</span>
-<span class="n">dofd</span><span class="o">=</span><span class="n">dfo</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s1">&#39;items&#39;</span><span class="p">,</span><span class="s1">&#39;freq&#39;</span><span class="p">,</span><span class="n">size</span><span class="p">(</span><span class="n">dfo</span><span class="o">.</span><span class="n">items</span><span class="p">)</span><span class="o">.</span><span class="n">alias</span><span class="p">(</span><span class="s1">&#39;size&#39;</span><span class="p">),</span><span class="n">array_contains</span><span class="p">(</span><span class="n">dfo</span><span class="o">.</span><span class="n">items</span><span class="p">,</span> <span class="n">lit</span><span class="p">(</span><span class="n">watch_conseq</span><span class="p">))</span><span class="o">.</span><span class="n">alias</span><span class="p">(</span><span class="n">watch_alias</span><span class="p">))</span> <span class="c1">#.where(  # .collect()</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;df rowcount:&#39;</span><span class="p">,</span><span class="n">dofd</span><span class="o">.</span><span class="n">count</span><span class="p">())</span>
+<span class="n">ipdf</span> <span class="o">=</span> <span class="n">get_itempopularity</span><span class="p">(</span><span class="n">model</span><span class="p">,</span><span class="n">rule_consequent_cols</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;df rowcount:&#39;</span><span class="p">,</span><span class="n">ipdf</span><span class="o">.</span><span class="n">count</span><span class="p">())</span>
 <span class="n">epoch_z</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
 <span class="c1">#print(&#39;elapsed:&#39;,round(epoch_z - epoch_a,1),&#39;s&#39;)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;elapsed: </span><span class="si">%.1f</span><span class="s2"> s&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">epoch_z</span> <span class="o">-</span> <span class="n">epoch_a</span><span class="p">))</span>
-<span class="n">dofd</span><span class="o">.</span><span class="n">limit</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span><span class="o">.</span><span class="n">toPandas</span><span class="p">()</span>
+<span class="n">ipdf</span><span class="o">.</span><span class="n">limit</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span><span class="o">.</span><span class="n">toPandas</span><span class="p">()</span>    
 </pre></div>
 
      </div>
@@ -16342,14 +16512,15 @@ PnL
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>df rowcount: 22285
-elapsed: 26.6 s
+<pre>watch_conseq: rPnL_isdiff=1
+df rowcount: 22305
+elapsed: 22.0 s
 </pre>
 </div>
 </div>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[59]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[27]:</div>
 
 
 
@@ -16381,22 +16552,22 @@ elapsed: 26.6 s
   <tbody>
     <tr>
       <th>0</th>
-      <td>[uPnL_diff=0]</td>
-      <td>497910</td>
+      <td>[rPnL_isdiff=0]</td>
+      <td>499244</td>
       <td>1</td>
       <td>False</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>[exp_date_m1=0]</td>
+      <td>[is_exp_date_m1=0]</td>
       <td>493927</td>
       <td>1</td>
       <td>False</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>[exp_date_m1=0, uPnL_diff=0]</td>
-      <td>493927</td>
+      <td>[is_exp_date_m1=0, rPnL_isdiff=0]</td>
+      <td>493177</td>
       <td>2</td>
       <td>False</td>
     </tr>
@@ -16409,8 +16580,8 @@ elapsed: 26.6 s
     </tr>
     <tr>
       <th>4</th>
-      <td>[PnL_ccy=USD, uPnL_diff=0]</td>
-      <td>482846</td>
+      <td>[PnL_ccy=USD, rPnL_isdiff=0]</td>
+      <td>484878</td>
       <td>2</td>
       <td>False</td>
     </tr>
@@ -16432,7 +16603,7 @@ elapsed: 26.6 s
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="baskets-popularity">baskets popularity<a class="anchor-link" href="#baskets-popularity">&#182;</a></h3>
+<h3 id="by-the-way---see-relevant-baskets-popularity">by the way - see relevant baskets popularity<a class="anchor-link" href="#by-the-way---see-relevant-baskets-popularity">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -16441,11 +16612,11 @@ elapsed: 26.6 s
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[60]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[28]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">dofdx</span> <span class="o">=</span> <span class="n">dofd</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="s1">&#39;size &gt;= 2 and &#39;</span><span class="o">+</span> <span class="n">watch_alias</span><span class="p">)</span> <span class="c1"># do not include the baskets with a single item</span>
-<span class="n">dofdx</span><span class="o">.</span><span class="n">limit</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span><span class="o">.</span><span class="n">toPandas</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">dofdx</span> <span class="o">=</span> <span class="n">get_relevantbasketpopularity</span><span class="p">(</span><span class="n">ipdf</span><span class="p">)</span>
+<span class="n">dofdx</span><span class="o">.</span><span class="n">limit</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span><span class="o">.</span><span class="n">toPandas</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -16461,7 +16632,7 @@ elapsed: 26.6 s
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[60]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[28]:</div>
 
 
 
@@ -16493,50 +16664,71 @@ elapsed: 26.6 s
   <tbody>
     <tr>
       <th>0</th>
-      <td>[uPnL_diff=1, fx_cut=TKY1500]</td>
-      <td>2090</td>
+      <td>[rPnL_isdiff=1, PnL_ccy=AUD]</td>
+      <td>756</td>
       <td>2</td>
       <td>True</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>[uPnL_diff=1, exp_date_m1=1]</td>
-      <td>2090</td>
-      <td>2</td>
+      <td>[rPnL_isdiff=1, PnL_ccy=AUD, product=fx fwd]</td>
+      <td>756</td>
+      <td>3</td>
       <td>True</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>[uPnL_diff=1, exp_date_m1=1, fx_cut=TKY1500]</td>
-      <td>2090</td>
+      <td>[rPnL_isdiff=1, PnL_ccy=AUD, trade_ccy=AUDUSD]</td>
+      <td>756</td>
       <td>3</td>
       <td>True</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>[uPnL_diff=1, PnL_ccy=USD]</td>
-      <td>2032</td>
-      <td>2</td>
+      <td>[rPnL_isdiff=1, PnL_ccy=AUD, trade_ccy=AUDUSD, product=fx fwd]</td>
+      <td>756</td>
+      <td>4</td>
       <td>True</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>[uPnL_diff=1, fx_cut=TKY1500, PnL_ccy=USD]</td>
-      <td>2032</td>
-      <td>3</td>
+      <td>[rPnL_isdiff=1, product=fx fwd]</td>
+      <td>756</td>
+      <td>2</td>
       <td>True</td>
     </tr>
     <tr>
       <th>5</th>
-      <td>[uPnL_diff=1, exp_date_m1=1, PnL_ccy=USD]</td>
-      <td>2032</td>
-      <td>3</td>
+      <td>[rPnL_isdiff=1, trade_ccy=AUDUSD]</td>
+      <td>756</td>
+      <td>2</td>
       <td>True</td>
     </tr>
     <tr>
       <th>6</th>
-      <td>[uPnL_diff=1, exp_date_m1=1, fx_cut=TKY1500, PnL_ccy=USD]</td>
-      <td>2032</td>
+      <td>[rPnL_isdiff=1, trade_ccy=AUDUSD, product=fx fwd]</td>
+      <td>756</td>
+      <td>3</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>[rPnL_isdiff=1, is_exp_date_m1=0]</td>
+      <td>750</td>
+      <td>2</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>[rPnL_isdiff=1, PnL_ccy=AUD, is_exp_date_m1=0]</td>
+      <td>750</td>
+      <td>3</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>[rPnL_isdiff=1, PnL_ccy=AUD, product=fx fwd, is_exp_date_m1=0]</td>
+      <td>750</td>
       <td>4</td>
       <td>True</td>
     </tr>
@@ -16551,20 +16743,64 @@ elapsed: 26.6 s
 
 </div>
 
-</div><div id="cell-id=30deb85d-1bc9-48cc-912f-7c3405d90b97" class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div id="cell-id=c5039466-0931-4e4d-8f4e-1e278ee5e6aa" class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[61]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[29]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">assoc</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">associationRules</span>
-<span class="n">assoc</span><span class="o">.</span><span class="n">createOrReplaceTempView</span><span class="p">(</span><span class="s2">&quot;assoc&quot;</span><span class="p">)</span>
-<span class="c1"># Then Query the temp view</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Top 20&quot;</span><span class="p">)</span>
-<span class="n">df2a</span> <span class="o">=</span> <span class="n">spark</span><span class="o">.</span><span class="n">sql</span><span class="p">(</span><span class="s2">&quot;SELECT * FROM assoc ORDER BY confidence desc&quot;</span><span class="p">)</span>
-<span class="n">df2a</span><span class="o">.</span><span class="n">limit</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span><span class="o">.</span><span class="n">toPandas</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">if</span> <span class="kc">False</span><span class="p">:</span>
+    <span class="n">df2a</span> <span class="o">=</span> <span class="n">show_assoc</span><span class="p">(</span><span class="n">model</span><span class="p">,</span><span class="s2">&quot;all,confid desc&quot;</span><span class="p">,</span><span class="n">rule_consequent_cols</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Top 20:&quot;</span><span class="p">)</span>
+    <span class="n">df2a</span><span class="o">.</span><span class="n">limit</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span><span class="o">.</span><span class="n">toPandas</span><span class="p">()</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div id="cell-id=4d212ffa-a3cf-4d36-b533-856b95616d69" class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[30]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">if</span> <span class="kc">False</span><span class="p">:</span>
+    <span class="n">df2b</span> <span class="o">=</span> <span class="n">show_assoc</span><span class="p">(</span><span class="n">model</span><span class="p">,</span><span class="s2">&quot;all+criteria&quot;</span><span class="p">,</span><span class="n">rule_consequent_cols</span><span class="p">)</span>
+    <span class="n">df2b</span><span class="o">.</span><span class="n">limit</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span><span class="o">.</span><span class="n">toPandas</span><span class="p">()</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div>
+<div id="cell-id=564f79dc-e658-47eb-98d2-79cd693f824e" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="show-antec--%3E-conseq-order-by-lift-DESC,-len(antecs)-ASC">show antec -&gt; conseq order by lift DESC, len(antecs) ASC<a class="anchor-link" href="#show-antec--%3E-conseq-order-by-lift-DESC,-len(antecs)-ASC">&#182;</a></h3>
+</div>
+</div>
+</div>
+</div><div id="cell-id=7c1d8350-4d77-47a5-b939-ee16a06df555" class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[31]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">dofdx2</span> <span class="o">=</span> <span class="n">show_assoc</span><span class="p">(</span><span class="n">model</span><span class="p">,</span><span class="s2">&quot;top assoc&quot;</span><span class="p">,</span><span class="n">rule_consequent_cols</span><span class="p">)</span>
+<span class="n">dofdx2</span><span class="o">.</span><span class="n">limit</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span><span class="o">.</span><span class="n">toPandas</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -16584,242 +16820,13 @@ elapsed: 26.6 s
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Top 20
+<pre>watching conseq: rPnL_isdiff=1
 </pre>
 </div>
 </div>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[61]:</div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>antecedent</th>
-      <th>consequent</th>
-      <th>confidence</th>
-      <th>lift</th>
-      <th>support</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>[trade_ccy=USDISK, product=fx spot]</td>
-      <td>[PnL_ccy=USD]</td>
-      <td>1.00</td>
-      <td>1.03</td>
-      <td>0.00</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>[market=PG, fx_cut=NYC1000, PnL_ccy=USD]</td>
-      <td>[uPnL_diff=0]</td>
-      <td>1.00</td>
-      <td>1.00</td>
-      <td>0.00</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>[market=GM, exp_date_m1=0]</td>
-      <td>[uPnL_diff=0]</td>
-      <td>1.00</td>
-      <td>1.00</td>
-      <td>0.01</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>[trade_ccy=USDMKD, product=fx futures, PnL_ccy=USD, exp_date_m1=0]</td>
-      <td>[uPnL_diff=0]</td>
-      <td>1.00</td>
-      <td>1.00</td>
-      <td>0.00</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>[market=CU, product=fx swap, PnL_ccy=USD, exp_date_m1=0]</td>
-      <td>[uPnL_diff=0]</td>
-      <td>1.00</td>
-      <td>1.00</td>
-      <td>0.00</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>[trade_ccy=USDDJF, fx_cut=ECB1415]</td>
-      <td>[PnL_ccy=USD]</td>
-      <td>1.00</td>
-      <td>1.03</td>
-      <td>0.00</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>[trade_ccy=USDCUP, fx_cut=ECB1415]</td>
-      <td>[PnL_ccy=USD]</td>
-      <td>1.00</td>
-      <td>1.03</td>
-      <td>0.00</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>[trade_ccy=USDXCD, product=fx futures, exp_date_m1=0]</td>
-      <td>[uPnL_diff=0]</td>
-      <td>1.00</td>
-      <td>1.00</td>
-      <td>0.00</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>[market=PK, fx_cut=NYC1000]</td>
-      <td>[uPnL_diff=0]</td>
-      <td>1.00</td>
-      <td>1.00</td>
-      <td>0.00</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>[trade_ccy=USDDJF, fx_cut=ECB1415]</td>
-      <td>[uPnL_diff=0]</td>
-      <td>1.00</td>
-      <td>1.00</td>
-      <td>0.00</td>
-    </tr>
-    <tr>
-      <th>10</th>
-      <td>[PnL_ccy=AUD, trade_ccy=AUDUSD, product=fx swap, exp_date_m1=0]</td>
-      <td>[uPnL_diff=0]</td>
-      <td>1.00</td>
-      <td>1.00</td>
-      <td>0.00</td>
-    </tr>
-    <tr>
-      <th>11</th>
-      <td>[trade_ccy=USDGIP, fx_cut=TKY1500, exp_date_m1=0, uPnL_diff=0]</td>
-      <td>[PnL_ccy=USD]</td>
-      <td>1.00</td>
-      <td>1.03</td>
-      <td>0.00</td>
-    </tr>
-    <tr>
-      <th>12</th>
-      <td>[market=LS, product=fx fwd, exp_date_m1=0]</td>
-      <td>[uPnL_diff=0]</td>
-      <td>1.00</td>
-      <td>1.00</td>
-      <td>0.00</td>
-    </tr>
-    <tr>
-      <th>13</th>
-      <td>[trade_ccy=USDTTD, product=fx spot, exp_date_m1=0, uPnL_diff=0]</td>
-      <td>[PnL_ccy=USD]</td>
-      <td>1.00</td>
-      <td>1.03</td>
-      <td>0.00</td>
-    </tr>
-    <tr>
-      <th>14</th>
-      <td>[trade_ccy=USDHTG, product=fx swap, uPnL_diff=0]</td>
-      <td>[PnL_ccy=USD]</td>
-      <td>1.00</td>
-      <td>1.03</td>
-      <td>0.00</td>
-    </tr>
-    <tr>
-      <th>15</th>
-      <td>[trade_ccy=USDMZN, product=fx swap]</td>
-      <td>[PnL_ccy=USD]</td>
-      <td>1.00</td>
-      <td>1.03</td>
-      <td>0.00</td>
-    </tr>
-    <tr>
-      <th>16</th>
-      <td>[trade_ccy=USDCOP, fx_cut=TKY1500, PnL_ccy=USD, exp_date_m1=0]</td>
-      <td>[uPnL_diff=0]</td>
-      <td>1.00</td>
-      <td>1.00</td>
-      <td>0.00</td>
-    </tr>
-    <tr>
-      <th>17</th>
-      <td>[trade_ccy=USDILS, product=fx spot]</td>
-      <td>[PnL_ccy=USD]</td>
-      <td>1.00</td>
-      <td>1.03</td>
-      <td>0.00</td>
-    </tr>
-    <tr>
-      <th>18</th>
-      <td>[trade_ccy=USDTND, product=fx spot]</td>
-      <td>[PnL_ccy=USD]</td>
-      <td>1.00</td>
-      <td>1.03</td>
-      <td>0.00</td>
-    </tr>
-    <tr>
-      <th>19</th>
-      <td>[trade_ccy=USDINR, product=fx swap, exp_date_m1=0]</td>
-      <td>[uPnL_diff=0]</td>
-      <td>1.00</td>
-      <td>1.00</td>
-      <td>0.00</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div id="cell-id=4d212ffa-a3cf-4d36-b533-856b95616d69" class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[62]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df2b</span><span class="o">=</span><span class="n">df2a</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s1">&#39;antecedent&#39;</span><span class="p">,</span><span class="s1">&#39;consequent&#39;</span><span class="p">,</span><span class="s1">&#39;confidence&#39;</span><span class="p">,</span><span class="s1">&#39;lift&#39;</span><span class="p">,</span><span class="s1">&#39;support&#39;</span><span class="p">,</span> \
-                 <span class="n">size</span><span class="p">(</span><span class="n">df2a</span><span class="o">.</span><span class="n">antecedent</span><span class="p">)</span><span class="o">.</span><span class="n">alias</span><span class="p">(</span><span class="s1">&#39;lenA&#39;</span><span class="p">),</span><span class="n">size</span><span class="p">(</span><span class="n">df2a</span><span class="o">.</span><span class="n">consequent</span><span class="p">)</span><span class="o">.</span><span class="n">alias</span><span class="p">(</span><span class="s1">&#39;lenC&#39;</span><span class="p">),</span> \
-                 <span class="n">array_contains</span><span class="p">(</span><span class="n">df2a</span><span class="o">.</span><span class="n">consequent</span><span class="p">,</span><span class="n">watch_conseq</span><span class="p">)</span><span class="o">.</span><span class="n">alias</span><span class="p">(</span><span class="n">colz_alias</span><span class="p">))</span>
-<span class="n">df2b</span><span class="o">.</span><span class="n">limit</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span><span class="o">.</span><span class="n">toPandas</span><span class="p">()</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[62]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[31]:</div>
 
 
 
@@ -16855,223 +16862,69 @@ elapsed: 26.6 s
   <tbody>
     <tr>
       <th>0</th>
-      <td>[market=CU, product=fx swap, PnL_ccy=USD, exp_date_m1=0]</td>
-      <td>[uPnL_diff=0]</td>
+      <td>[PnL_ccy=AUD, product=fx fwd]</td>
+      <td>[rPnL_isdiff=1]</td>
       <td>1.00</td>
-      <td>1.00</td>
+      <td>661.38</td>
       <td>0.00</td>
-      <td>4</td>
+      <td>2</td>
       <td>1</td>
-      <td>False</td>
+      <td>True</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>[market=GM, exp_date_m1=0]</td>
-      <td>[uPnL_diff=0]</td>
+      <td>[trade_ccy=AUDUSD, product=fx fwd]</td>
+      <td>[rPnL_isdiff=1]</td>
       <td>1.00</td>
-      <td>1.00</td>
-      <td>0.01</td>
+      <td>661.38</td>
+      <td>0.00</td>
       <td>2</td>
       <td>1</td>
-      <td>False</td>
+      <td>True</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>[trade_ccy=USDISK, product=fx spot]</td>
-      <td>[PnL_ccy=USD]</td>
+      <td>[trade_ccy=AUDUSD, product=fx fwd, is_exp_date_m1=0]</td>
+      <td>[rPnL_isdiff=1]</td>
       <td>1.00</td>
-      <td>1.03</td>
+      <td>661.38</td>
       <td>0.00</td>
-      <td>2</td>
+      <td>3</td>
       <td>1</td>
-      <td>False</td>
+      <td>True</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>[trade_ccy=USDCUP, fx_cut=ECB1415]</td>
-      <td>[PnL_ccy=USD]</td>
+      <td>[PnL_ccy=AUD, product=fx fwd, is_exp_date_m1=0]</td>
+      <td>[rPnL_isdiff=1]</td>
       <td>1.00</td>
-      <td>1.03</td>
+      <td>661.38</td>
       <td>0.00</td>
-      <td>2</td>
+      <td>3</td>
       <td>1</td>
-      <td>False</td>
+      <td>True</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>[market=PG, fx_cut=NYC1000, PnL_ccy=USD]</td>
-      <td>[uPnL_diff=0]</td>
+      <td>[PnL_ccy=AUD, trade_ccy=AUDUSD, product=fx fwd]</td>
+      <td>[rPnL_isdiff=1]</td>
       <td>1.00</td>
-      <td>1.00</td>
+      <td>661.38</td>
       <td>0.00</td>
       <td>3</td>
       <td>1</td>
-      <td>False</td>
+      <td>True</td>
     </tr>
     <tr>
       <th>5</th>
-      <td>[PnL_ccy=AUD, trade_ccy=AUDUSD, product=fx swap, exp_date_m1=0]</td>
-      <td>[uPnL_diff=0]</td>
+      <td>[PnL_ccy=AUD, trade_ccy=AUDUSD, product=fx fwd, is_exp_date_m1=0]</td>
+      <td>[rPnL_isdiff=1]</td>
       <td>1.00</td>
-      <td>1.00</td>
+      <td>661.38</td>
       <td>0.00</td>
       <td>4</td>
       <td>1</td>
-      <td>False</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>[market=PK, fx_cut=NYC1000]</td>
-      <td>[uPnL_diff=0]</td>
-      <td>1.00</td>
-      <td>1.00</td>
-      <td>0.00</td>
-      <td>2</td>
-      <td>1</td>
-      <td>False</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>[trade_ccy=USDHTG, product=fx swap, uPnL_diff=0]</td>
-      <td>[PnL_ccy=USD]</td>
-      <td>1.00</td>
-      <td>1.03</td>
-      <td>0.00</td>
-      <td>3</td>
-      <td>1</td>
-      <td>False</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>[market=LS, product=fx fwd, exp_date_m1=0]</td>
-      <td>[uPnL_diff=0]</td>
-      <td>1.00</td>
-      <td>1.00</td>
-      <td>0.00</td>
-      <td>3</td>
-      <td>1</td>
-      <td>False</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>[trade_ccy=USDTND, product=fx spot]</td>
-      <td>[PnL_ccy=USD]</td>
-      <td>1.00</td>
-      <td>1.03</td>
-      <td>0.00</td>
-      <td>2</td>
-      <td>1</td>
-      <td>False</td>
-    </tr>
-    <tr>
-      <th>10</th>
-      <td>[trade_ccy=USDCOP, fx_cut=TKY1500, PnL_ccy=USD, exp_date_m1=0]</td>
-      <td>[uPnL_diff=0]</td>
-      <td>1.00</td>
-      <td>1.00</td>
-      <td>0.00</td>
-      <td>4</td>
-      <td>1</td>
-      <td>False</td>
-    </tr>
-    <tr>
-      <th>11</th>
-      <td>[trade_ccy=USDCUP, exp_date_m1=0]</td>
-      <td>[PnL_ccy=USD]</td>
-      <td>1.00</td>
-      <td>1.03</td>
-      <td>0.01</td>
-      <td>2</td>
-      <td>1</td>
-      <td>False</td>
-    </tr>
-    <tr>
-      <th>12</th>
-      <td>[trade_ccy=USDMKD, product=fx futures, PnL_ccy=USD, exp_date_m1=0]</td>
-      <td>[uPnL_diff=0]</td>
-      <td>1.00</td>
-      <td>1.00</td>
-      <td>0.00</td>
-      <td>4</td>
-      <td>1</td>
-      <td>False</td>
-    </tr>
-    <tr>
-      <th>13</th>
-      <td>[market=BS, product=fx spot, PnL_ccy=USD, exp_date_m1=0]</td>
-      <td>[uPnL_diff=0]</td>
-      <td>1.00</td>
-      <td>1.00</td>
-      <td>0.00</td>
-      <td>4</td>
-      <td>1</td>
-      <td>False</td>
-    </tr>
-    <tr>
-      <th>14</th>
-      <td>[market=AR, fx_cut=TKY1500, PnL_ccy=USD, uPnL_diff=0]</td>
-      <td>[exp_date_m1=0]</td>
-      <td>1.00</td>
-      <td>1.01</td>
-      <td>0.00</td>
-      <td>4</td>
-      <td>1</td>
-      <td>False</td>
-    </tr>
-    <tr>
-      <th>15</th>
-      <td>[trade_ccy=USDCUP, exp_date_m1=0]</td>
-      <td>[uPnL_diff=0]</td>
-      <td>1.00</td>
-      <td>1.00</td>
-      <td>0.01</td>
-      <td>2</td>
-      <td>1</td>
-      <td>False</td>
-    </tr>
-    <tr>
-      <th>16</th>
-      <td>[trade_ccy=USDBRL, product=fx spot, PnL_ccy=USD, exp_date_m1=0]</td>
-      <td>[uPnL_diff=0]</td>
-      <td>1.00</td>
-      <td>1.00</td>
-      <td>0.00</td>
-      <td>4</td>
-      <td>1</td>
-      <td>False</td>
-    </tr>
-    <tr>
-      <th>17</th>
-      <td>[trade_ccy=USDNGN, fx_cut=TKY1500, PnL_ccy=USD, exp_date_m1=0]</td>
-      <td>[uPnL_diff=0]</td>
-      <td>1.00</td>
-      <td>1.00</td>
-      <td>0.00</td>
-      <td>4</td>
-      <td>1</td>
-      <td>False</td>
-    </tr>
-    <tr>
-      <th>18</th>
-      <td>[trade_ccy=USDSBD, product=fx fwd]</td>
-      <td>[PnL_ccy=USD]</td>
-      <td>1.00</td>
-      <td>1.03</td>
-      <td>0.00</td>
-      <td>2</td>
-      <td>1</td>
-      <td>False</td>
-    </tr>
-    <tr>
-      <th>19</th>
-      <td>[trade_ccy=USDLTL, product=fx fwd]</td>
-      <td>[PnL_ccy=USD]</td>
-      <td>1.00</td>
-      <td>1.03</td>
-      <td>0.00</td>
-      <td>2</td>
-      <td>1</td>
-      <td>False</td>
+      <td>True</td>
     </tr>
   </tbody>
 </table>
@@ -17085,33 +16938,41 @@ elapsed: 26.6 s
 </div>
 
 </div>
-<div id="cell-id=564f79dc-e658-47eb-98d2-79cd693f824e" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div id="cell-id=22971b33-075e-430d-ae29-b7351a7e4151" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="show-antec--%3E-conseq-order-by-lift-DESC,-len(antecs)-ASC">show antec -&gt; conseq order by lift DESC, len(antecs) ASC<a class="anchor-link" href="#show-antec--%3E-conseq-order-by-lift-DESC,-len(antecs)-ASC">&#182;</a></h3>
+<h3 id="comments:">comments:<a class="anchor-link" href="#comments:">&#182;</a></h3><ul>
+<li>The 2nd implied rule (row 1) is exactly the rule that was applied to introduce fabricated differences.</li>
+<li>The 1st implied rule (row 0) is a byproduct of rule 2: in our input, trade_ccy=AUDUSD ⇒ PnL_ccy=AUD</li>
+</ul>
+
 </div>
 </div>
 </div>
-</div><div id="cell-id=7c1d8350-4d77-47a5-b939-ee16a06df555" class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div>
+<div id="cell-id=f423387c-cf8c-45d3-b827-fba9b9ce4c6e" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="saving-to-csv">saving to csv<a class="anchor-link" href="#saving-to-csv">&#182;</a></h3>
+</div>
+</div>
+</div>
+</div><div id="cell-id=3e41fa0c-9407-4dee-b92e-f8e7e818d4b7" class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[63]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[32]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#dofdx2 = df2b.where(&#39;lenC==1 and Cisdpnlnz&#39;)</span>
-<span class="n">dofdx2</span> <span class="o">=</span> <span class="n">df2b</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">colz_alias</span><span class="p">)</span>
-<span class="n">dofdx2noa</span> <span class="o">=</span> <span class="n">dofdx2</span><span class="o">.</span><span class="n">withColumn</span><span class="p">(</span><span class="s2">&quot;antecedent&quot;</span><span class="p">,</span> <span class="n">concat_ws</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="p">,</span><span class="n">col</span><span class="p">(</span><span class="s2">&quot;antecedent&quot;</span><span class="p">)))</span>
-<span class="n">dofdx2noa</span> <span class="o">=</span> <span class="n">dofdx2noa</span><span class="o">.</span><span class="n">withColumn</span><span class="p">(</span><span class="s2">&quot;consequent&quot;</span><span class="p">,</span> <span class="n">concat_ws</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="p">,</span><span class="n">col</span><span class="p">(</span><span class="s2">&quot;consequent&quot;</span><span class="p">)))</span>
-
-<span class="c1">#dofdx2noa.coalesce(1).write.option(&quot;header&quot;,True).mode(&#39;overwrite&#39;).csv(fname_v1+&quot;.assoc.csv&quot;)</span>
-<span class="n">dofdx2noa</span><span class="o">.</span><span class="n">toPandas</span><span class="p">()</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">fname_v1</span><span class="o">+</span><span class="s2">&quot;.output.&quot;</span><span class="o">+</span><span class="n">rule_consequent_cols</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">+</span><span class="s2">&quot;.assoc.csv&quot;</span><span class="p">)</span>
-<span class="c1">#thanks https://stackoverflow.com/questions/43661660/spark-how-to-write-a-single-csv-file-without-folder</span>
-<span class="n">dofdx2</span><span class="o">.</span><span class="n">orderBy</span><span class="p">(</span><span class="n">col</span><span class="p">(</span><span class="s2">&quot;lift&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">desc</span><span class="p">(),</span><span class="n">col</span><span class="p">(</span><span class="s2">&quot;lenA&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">asc</span><span class="p">())</span><span class="o">.</span><span class="n">limit</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span><span class="o">.</span><span class="n">toPandas</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">dofdx2o</span> <span class="o">=</span> <span class="n">show_assoc</span><span class="p">(</span><span class="n">model</span><span class="p">,</span><span class="s2">&quot;top assoc for csv output&quot;</span><span class="p">,</span><span class="n">rule_consequent_cols</span><span class="p">)</span>
+<span class="n">dofdx2o</span><span class="o">.</span><span class="n">toPandas</span><span class="p">()</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">fname_v1</span><span class="o">+</span><span class="s2">&quot;.output.conseq-&quot;</span><span class="o">+</span><span class="n">rule_consequent_cols</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">+</span><span class="s2">&quot;.assoc.csv&quot;</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -17125,69 +16986,15 @@ elapsed: 26.6 s
 
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputArea-child">
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[63]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>antecedent</th>
-      <th>consequent</th>
-      <th>confidence</th>
-      <th>lift</th>
-      <th>support</th>
-      <th>lenA</th>
-      <th>lenC</th>
-      <th>diff_included_in_C</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>[exp_date_m1=1, fx_cut=TKY1500]</td>
-      <td>[uPnL_diff=1]</td>
-      <td>1.00</td>
-      <td>239.23</td>
-      <td>0.00</td>
-      <td>2</td>
-      <td>1</td>
-      <td>True</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>[exp_date_m1=1, fx_cut=TKY1500, PnL_ccy=USD]</td>
-      <td>[uPnL_diff=1]</td>
-      <td>1.00</td>
-      <td>239.23</td>
-      <td>0.00</td>
-      <td>3</td>
-      <td>1</td>
-      <td>True</td>
-    </tr>
-  </tbody>
-</table>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>watching conseq: rPnL_isdiff=1
+</pre>
 </div>
-</div>
-
 </div>
 
 </div>
@@ -17199,16 +17006,402 @@ elapsed: 26.6 s
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[64]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[33]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## .. the most recurring combination of antecedents&#39;values for calc_delta_pnldiff_z=1 seems to be</span>
-<span class="c1"># ...</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## .. the most recurring combination of antecedents&#39;values for teh consequent</span>
 </pre></div>
 
      </div>
 </div>
 </div>
+</div>
+
+</div><div id="cell-id=dd31cca7-85ae-41c7-96c2-79aa0b52d730" class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[34]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">print_now</span><span class="p">()</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>2023-05-10 22:20:04 +08+0800
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div id="cell-id=e0fca4f8-9026-43aa-b2d7-7258390043e2" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="consequent-2:-uPnL">consequent 2: uPnL<a class="anchor-link" href="#consequent-2:-uPnL">&#182;</a></h2>
+</div>
+</div>
+</div>
+</div><div id="cell-id=b390f711-ed2b-430e-ac57-4b547b378ade" class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[35]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># this pandas is now ready for rule-mining.</span>
+<span class="n">rule_antecedent_cols</span> <span class="o">=</span> <span class="p">[</span> <span class="s2">&quot;trade_ccy&quot;</span><span class="p">,</span><span class="s2">&quot;product&quot;</span><span class="p">,</span><span class="s2">&quot;disc_curve&quot;</span><span class="p">,</span><span class="s2">&quot;fx_cut&quot;</span><span class="p">,</span><span class="s2">&quot;market&quot;</span><span class="p">,</span><span class="s2">&quot;PnL_ccy&quot;</span><span class="p">,</span><span class="s2">&quot;is_exp_date_m1&quot;</span> <span class="p">]</span>
+<span class="n">rule_consequent_cols</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;uPnL_isdiff&quot;</span><span class="p">]</span>
+<span class="c1">#rule_consequent_cols = [ &quot;uPnL_diff&quot;] # , &quot;rPnL_diff&quot;] # , &quot;PnL_diff&quot; ]</span>
+
+<span class="c1"># ac = antec and conseq</span>
+
+<span class="c1"># goal: to build datafram pnl3 with items column with the fields above</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div id="cell-id=a82c823b-edbf-4ae5-958f-6ba2e421d43d" class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[36]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pnlb</span> <span class="o">=</span> <span class="n">get_basket</span><span class="p">(</span><span class="n">pnl_v12bS</span><span class="p">,</span><span class="n">rule_antecedent_cols</span><span class="p">,</span><span class="n">rule_consequent_cols</span><span class="p">)</span>
+<span class="n">pnlb</span><span class="o">.</span><span class="n">limit</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">toPandas</span><span class="p">()</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[36]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>id</th>
+      <th>items</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>5</td>
+      <td>[trade_ccy=USDZMW, product=fx fwd, disc_curve=USDZMW-GN, fx_cut=NYC1000, market=GN, PnL_ccy=USD, is_exp_date_m1=0, uPnL_isdiff=0]</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>6</td>
+      <td>[trade_ccy=USDMNT, product=fx spot, disc_curve=USDMNT-GD, fx_cut=NYC1000, market=GD, PnL_ccy=USD, is_exp_date_m1=0, uPnL_isdiff=0]</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>8</td>
+      <td>[trade_ccy=USDLSL, product=fx futures, disc_curve=USDLSL-TH, fx_cut=TKY1500, market=TH, PnL_ccy=USD, is_exp_date_m1=0, uPnL_isdiff=0]</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div id="cell-id=dcacb924-991a-44e1-8a65-5bcbb84eb1c7" class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[37]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># https://spark.apache.org/docs/latest/api/python/reference/api/pyspark.ml.fpm.FPGrowth.html = 3.4.0</span>
+<span class="c1"># https://spark.apache.org/docs/3.1.1/api/python/reference/api/pyspark.ml.fpm.FPGrowth.html</span>
+<span class="kn">import</span> <span class="nn">time</span>
+<span class="kn">from</span> <span class="nn">pyspark.ml.fpm</span> <span class="kn">import</span> <span class="n">FPGrowth</span>
+<span class="n">fpGrowth</span> <span class="o">=</span> <span class="n">FPGrowth</span><span class="p">(</span><span class="n">itemsCol</span><span class="o">=</span><span class="s2">&quot;items&quot;</span><span class="p">,</span> <span class="n">minSupport</span><span class="o">=</span><span class="n">minSupport_</span><span class="p">,</span> <span class="n">minConfidence</span><span class="o">=</span><span class="n">minConfidence_</span><span class="p">)</span> <span class="c1"># minSupport=0.2, minConfidence=0.1</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">fpGrowth</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">pnlb</span><span class="p">)</span>
+
+<span class="c1"># now you have the model.</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div>
+<div id="cell-id=2b00b038-48c3-4784-aa0f-3cec3678465e" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="show-antec--%3E-conseq-order-by-lift-DESC,-len(antecs)-ASC">show antec -&gt; conseq order by lift DESC, len(antecs) ASC<a class="anchor-link" href="#show-antec--%3E-conseq-order-by-lift-DESC,-len(antecs)-ASC">&#182;</a></h3>
+</div>
+</div>
+</div>
+</div><div id="cell-id=1d275b77-204e-4a45-b4c0-f5459736cb80" class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[38]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">dofdx2</span> <span class="o">=</span> <span class="n">show_assoc</span><span class="p">(</span><span class="n">model</span><span class="p">,</span><span class="s2">&quot;top assoc&quot;</span><span class="p">,</span><span class="n">rule_consequent_cols</span><span class="p">)</span>
+<span class="n">dofdx2</span><span class="o">.</span><span class="n">limit</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span><span class="o">.</span><span class="n">toPandas</span><span class="p">()</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>watching conseq: uPnL_isdiff=1
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[38]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>antecedent</th>
+      <th>consequent</th>
+      <th>confidence</th>
+      <th>lift</th>
+      <th>support</th>
+      <th>lenA</th>
+      <th>lenC</th>
+      <th>diff_included_in_C</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>[is_exp_date_m1=1, fx_cut=TKY1500]</td>
+      <td>[uPnL_isdiff=1]</td>
+      <td>1.00</td>
+      <td>239.23</td>
+      <td>0.00</td>
+      <td>2</td>
+      <td>1</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>[is_exp_date_m1=1, fx_cut=TKY1500, PnL_ccy=USD]</td>
+      <td>[uPnL_isdiff=1]</td>
+      <td>1.00</td>
+      <td>239.23</td>
+      <td>0.00</td>
+      <td>3</td>
+      <td>1</td>
+      <td>True</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div id="cell-id=befad1a3-6fd0-4d38-b4e7-f8915fd19646" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="comments:">comments:<a class="anchor-link" href="#comments:">&#182;</a></h3><ul>
+<li>The 1st implied rule (row 0) is exactly the rule that was applied to introduce fabricated differences.</li>
+<li>The 2nd implied rule (row 1) is less general than rule 1.</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+<div id="cell-id=87c4960a-4b99-44bd-89e4-4c5c92d29b4b" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="saving-to-csv">saving to csv<a class="anchor-link" href="#saving-to-csv">&#182;</a></h3>
+</div>
+</div>
+</div>
+</div><div id="cell-id=a524bac4-2c67-4b5e-927f-db431f76b45c" class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[39]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">dofdx2o</span> <span class="o">=</span> <span class="n">show_assoc</span><span class="p">(</span><span class="n">model</span><span class="p">,</span><span class="s2">&quot;top assoc for csv output&quot;</span><span class="p">,</span><span class="n">rule_consequent_cols</span><span class="p">)</span>
+<span class="n">dofdx2o</span><span class="o">.</span><span class="n">toPandas</span><span class="p">()</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">fname_v1</span><span class="o">+</span><span class="s2">&quot;.output.conseq-&quot;</span><span class="o">+</span><span class="n">rule_consequent_cols</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">+</span><span class="s2">&quot;.assoc.csv&quot;</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>watching conseq: uPnL_isdiff=1
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div id="cell-id=809c7f25-9a60-40b0-b6fa-7b5019d9bf76" class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[40]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">print_now</span><span class="p">()</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>2023-05-10 22:21:31 +08+0800
+</pre>
+</div>
+</div>
+
+</div>
+
 </div>
 
 </div>
@@ -17218,26 +17411,15 @@ elapsed: 26.6 s
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="fabricated-diff-1-applied-to-field-rPNL-when:-trade_ccy=AUDUSD-&amp;-product=fx-fwd">fabricated diff 1 applied to field rPNL when: trade_ccy=AUDUSD &amp; product=fx fwd<a class="anchor-link" href="#fabricated-diff-1-applied-to-field-rPNL-when:-trade_ccy=AUDUSD-&amp;-product=fx-fwd">&#182;</a></h3><h3 id="fabricated-diff-2-applied-to-field-uPNL-when:-fx_cut=TKY1500-&amp;-exp_dt=T-1">fabricated diff 2 applied to field uPNL when: fx_cut=TKY1500 &amp; exp_dt=T-1<a class="anchor-link" href="#fabricated-diff-2-applied-to-field-uPNL-when:-fx_cut=TKY1500-&amp;-exp_dt=T-1">&#182;</a></h3><h3 id="fabricated-diff-3-applied-to-field-PNL-as-sum-of-rPNL-and-uPNL">fabricated diff 3 applied to field PNL as sum of rPNL and uPNL<a class="anchor-link" href="#fabricated-diff-3-applied-to-field-PNL-as-sum-of-rPNL-and-uPNL">&#182;</a></h3>
-</div>
-</div>
-</div>
-</div><div id="cell-id=c34eb0ae-2b78-4c8d-a3a2-e9e50b49ef86" class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
+<h3 id="reminder-on-the-rules-applied-to-csv-v1-to-obtain-csv-v2:">reminder on the rules applied to csv v1 to obtain csv v2:<a class="anchor-link" href="#reminder-on-the-rules-applied-to-csv-v1-to-obtain-csv-v2:">&#182;</a></h3><ul>
+<li>fabricated diff 1 was applied to field rPNL when: trade_ccy=AUDUSD &amp; product=fx fwd</li>
+<li>fabricated diff 2 was applied to field uPNL when: fx_cut=TKY1500 &amp; exp_dt=T-1</li>
+<li>fabricated diff 3 was applied to field PNL as sum of rPNL and uPNL</li>
+</ul>
 
-     </div>
 </div>
 </div>
 </div>
-
 </div>
 </body>
 
